@@ -1,0 +1,3008 @@
+{
+  "Networking": [
+    {
+      "term": "Computer Network",
+      "definition": "A group of interconnected devices that communicate and share resources. Networks make it possible to share files, printers and Internet access, and they range from a few devices in a home to millions of devices worldwide.",
+      "example": "Computers connected to the same Wi-Fi network."
+    },
+    {
+      "term": "IP Address",
+      "definition": "A logical address assigned to a device to identify it on a network. It works like a postal address for data, and it can be assigned statically by an administrator or dynamically by a DHCP server.",
+      "example": "192.168.1.10"
+    },
+    {
+      "term": "IPv4",
+      "definition": "The fourth version of Internet Protocol that uses 32-bit addresses. It allows about 4.3 billion unique addresses written in dotted decimal form, a limit that led to address exhaustion and the creation of IPv6.",
+      "example": "192.168.0.1"
+    },
+    {
+      "term": "IPv6",
+      "definition": "The newer version of Internet Protocol that uses 128-bit addresses. It was designed to solve IPv4 address exhaustion and also offers a vastly larger address space, simplified header processing and built-in support for IPsec.",
+      "example": "2001:db8::1"
+    },
+    {
+      "term": "MAC Address",
+      "definition": "A hardware address used to identify a network interface on a local network. It is a 48-bit identifier, usually written as six pairs of hexadecimal digits, that is assigned by the manufacturer and used for delivery within the same local network.",
+      "example": "00:1A:2B:3C:4D:5E"
+    },
+    {
+      "term": "DNS",
+      "definition": "Domain Name System translates domain names into IP addresses. It acts like the Internet's phonebook, so users can type memorable names instead of numeric addresses, and it uses a distributed hierarchy of servers to answer queries quickly.",
+      "example": "Translating google.com into its corresponding IP address."
+    },
+    {
+      "term": "DHCP",
+      "definition": "Dynamic Host Configuration Protocol automatically assigns IP addresses and other network settings to devices. This removes the need to configure every device by hand, and the addresses are given out for a limited time called a lease.",
+      "example": "Your router automatically assigns 192.168.1.5 to your laptop."
+    },
+    {
+      "term": "Default Gateway",
+      "definition": "A device that forwards traffic from a local network to other networks. Devices send any traffic destined for an address outside their own subnet to this gateway, which is usually the local router.",
+      "example": "192.168.1.1"
+    },
+    {
+      "term": "Subnet Mask",
+      "definition": "A value used to identify the network and host portions of an IPv4 address. It uses a pattern of binary ones and zeros to separate network bits from host bits, which lets a device decide whether a destination is local or must be sent to the gateway.",
+      "example": "255.255.255.0"
+    },
+    {
+      "term": "Subnetting",
+      "definition": "The process of dividing a large network into smaller logical networks. It improves address usage, reduces broadcast traffic and allows administrators to separate departments for better performance and security.",
+      "example": "Dividing 192.168.1.0/24 into smaller /26 networks."
+    },
+    {
+      "term": "LAN",
+      "definition": "Local Area Network connects devices within a limited geographical area. LANs usually provide high speeds and low latency and are typically owned and managed by a single organization using Ethernet cables or Wi-Fi.",
+      "example": "A network connecting computers in a university laboratory."
+    },
+    {
+      "term": "WAN",
+      "definition": "Wide Area Network connects networks across large geographical distances. WANs often rely on leased lines or services from telecommunication providers and connect branch offices, data centres and the public Internet.",
+      "example": "The Internet is the largest example of a WAN."
+    },
+    {
+      "term": "WLAN",
+      "definition": "Wireless Local Area Network connects devices using wireless communication. It uses radio signals instead of cables, commonly following the IEEE 802.11 (Wi-Fi) standards, and usually relies on an access point to link wireless clients.",
+      "example": "A home Wi-Fi network."
+    },
+    {
+      "term": "PAN",
+      "definition": "Personal Area Network connects personal devices over a short distance. It typically covers only a few metres around a person and often uses technologies such as Bluetooth, NFC or USB tethering.",
+      "example": "A smartphone connected to wireless earbuds through Bluetooth."
+    },
+    {
+      "term": "MAN",
+      "definition": "Metropolitan Area Network connects networks across a city or metropolitan area. It is larger than a LAN but smaller than a WAN and is often built using high-capacity fibre links operated by a city authority or service provider.",
+      "example": "A network connecting different university campuses across a city."
+    },
+    {
+      "term": "Router",
+      "definition": "A networking device that forwards data packets between different networks. Routers examine the destination IP address of each packet and use a routing table to choose the best path, and at home they often include firewall and NAT features as well.",
+      "example": "A home router connecting your local network to the Internet."
+    },
+    {
+      "term": "Switch",
+      "definition": "A networking device that connects devices within a LAN and forwards frames using MAC addresses. By learning which MAC address is on which port, a switch sends traffic only to the intended device, which is more efficient and more secure than using a hub.",
+      "example": "A switch connecting multiple computers in an office."
+    },
+    {
+      "term": "Hub",
+      "definition": "A basic networking device that broadcasts incoming data to all connected ports. Because every device receives all traffic, hubs cause collisions and expose data to eavesdropping, so they have been mostly replaced by switches.",
+      "example": "A hub sends received data to every connected computer."
+    },
+    {
+      "term": "Modem",
+      "definition": "A device that converts signals to enable communication over an Internet service provider's connection. The name comes from modulator-demodulator, and it translates between digital data from a computer and the type of signal used by cable, DSL or fibre lines.",
+      "example": "A cable modem connecting a home network to an ISP."
+    },
+    {
+      "term": "Access Point",
+      "definition": "A device that allows wireless devices to connect to a wired network. It acts as a bridge between wireless clients and the wired LAN and extends Wi-Fi coverage when several are placed around a building.",
+      "example": "A Wi-Fi access point providing wireless connectivity in an office."
+    },
+    {
+      "term": "Firewall",
+      "definition": "A security system that monitors and controls network traffic according to predefined rules. Firewalls can be hardware or software and may filter by IP address, port, protocol or application, acting as a barrier between trusted and untrusted networks.",
+      "example": "Blocking incoming connections from an unauthorized IP address."
+    },
+    {
+      "term": "NAT",
+      "definition": "Network Address Translation modifies IP address information in packet headers, commonly allowing multiple private devices to share a public IP address. It conserves public IPv4 addresses and hides internal addresses from the outside, although it is not a replacement for a real firewall.",
+      "example": "Several home devices accessing the Internet through one public IP address."
+    },
+    {
+      "term": "Port",
+      "definition": "A logical communication endpoint used to identify specific applications or services on a device. Port numbers range from 0 to 65535, and the combination of an IP address and a port number identifies exactly which service should receive the data.",
+      "example": "Port 443 is commonly used for HTTPS."
+    },
+    {
+      "term": "Protocol",
+      "definition": "A set of rules that determines how devices communicate and exchange data. Protocols define details such as message format, order, error handling and security, which allows devices from different vendors to work together.",
+      "example": "TCP and HTTP are networking protocols."
+    },
+    {
+      "term": "TCP",
+      "definition": "Transmission Control Protocol provides reliable, ordered data delivery between devices. It uses a three-way handshake to set up a connection and then uses acknowledgements, retransmission and flow control to make sure no data is lost or delivered out of order.",
+      "example": "Downloading a file using a TCP connection."
+    },
+    {
+      "term": "UDP",
+      "definition": "User Datagram Protocol sends data without establishing a connection or guaranteeing delivery. Because it avoids connection setup and retransmission, it has low overhead and delay, making it suitable for real-time services such as VoIP, DNS queries and streaming.",
+      "example": "Online gaming and live video streaming commonly use UDP."
+    },
+    {
+      "term": "HTTP",
+      "definition": "Hypertext Transfer Protocol is used to transfer web resources between clients and servers. It follows a request and response model using methods such as GET and POST, and by default it sends data in plain text over port 80.",
+      "example": "A browser requesting a webpage from a web server."
+    },
+    {
+      "term": "HTTPS",
+      "definition": "HTTP Secure uses TLS to encrypt communication between a client and a web server. The encryption protects data from eavesdropping and tampering, and the server's digital certificate lets the browser verify the website's identity, using port 443 by default.",
+      "example": "Logging into a website using https://example.com."
+    },
+    {
+      "term": "FTP",
+      "definition": "File Transfer Protocol is used to transfer files between computers over a network. It uses separate control and data connections (typically ports 21 and 20) and sends credentials in plain text, so secure alternatives such as SFTP are recommended.",
+      "example": "Uploading website files to an FTP server."
+    },
+    {
+      "term": "SSH",
+      "definition": "Secure Shell provides encrypted remote access to another computer. It replaces insecure tools like Telnet, uses port 22 by default, and supports password or key-based authentication as well as secure file transfer.",
+      "example": "Connecting to a Linux server using ssh user@192.168.1.10."
+    },
+    {
+      "term": "Telnet",
+      "definition": "A network protocol used for remote command-line access without encryption. Since everything, including passwords, is sent in plain text, it is considered insecure and has largely been replaced by SSH.",
+      "example": "Connecting to a remote device through Telnet on port 23."
+    },
+    {
+      "term": "SMTP",
+      "definition": "Simple Mail Transfer Protocol is used to send emails between mail clients and servers or between mail servers. It works mainly on port 25 for server-to-server delivery and ports 587 or 465 for clients submitting mail, and it only handles sending, not retrieving, messages.",
+      "example": "An email application sending a message through an SMTP server."
+    },
+    {
+      "term": "POP3",
+      "definition": "Post Office Protocol version 3 retrieves emails from a mail server, commonly downloading them to a device. It uses port 110 (or 995 with encryption), and after downloading, messages are normally removed from the server, which makes them hard to access from multiple devices.",
+      "example": "An email client downloading messages using POP3."
+    },
+    {
+      "term": "IMAP",
+      "definition": "Internet Message Access Protocol allows users to access and synchronize emails stored on a mail server. It keeps messages on the server, so actions like reading or deleting a message appear on all devices, and it uses port 143 (or 993 with encryption).",
+      "example": "Reading the same email on a phone and laptop."
+    },
+    {
+      "term": "ICMP",
+      "definition": "Internet Control Message Protocol is used for network error reporting and diagnostic communication. It is not used to carry user data; instead it reports problems such as unreachable hosts or expired packets and powers tools like ping and traceroute.",
+      "example": "The ping command uses ICMP Echo Requests and Replies."
+    },
+    {
+      "term": "ARP",
+      "definition": "Address Resolution Protocol discovers the MAC address associated with an IPv4 address on a local network. Devices store the answers in an ARP cache, but since ARP has no authentication, it can be abused in attacks such as ARP spoofing.",
+      "example": "Finding the MAC address of 192.168.1.1."
+    },
+    {
+      "term": "Packet",
+      "definition": "A formatted unit of data transmitted across a network at the network layer. Each packet contains a header with information such as source and destination addresses plus the payload, and packets may take different routes before being reassembled.",
+      "example": "A webpage request is broken into packets before transmission."
+    },
+    {
+      "term": "Bandwidth",
+      "definition": "The maximum data transfer capacity of a network connection over a given period. It is usually measured in bits per second and describes capacity rather than speed, much like the width of a road limits how many cars can pass at once.",
+      "example": "A connection with a bandwidth of 100 Mbps."
+    },
+    {
+      "term": "Latency",
+      "definition": "The time taken for data to travel from one point to another across a network. It is affected by distance, congestion and processing delays, and low latency is especially important for gaming, video calls and financial trading.",
+      "example": "A 20 ms ping indicates a round-trip time of approximately 20 milliseconds."
+    },
+    {
+      "term": "Packet Loss",
+      "definition": "A condition in which data packets fail to reach their intended destination. It is often caused by congestion, faulty hardware or poor wireless signals, and it can lead to slow transfers, choppy audio and freezing video.",
+      "example": "An online game experiencing lag because 5% of packets are lost."
+    },
+    {
+      "term": "Ping",
+      "definition": "A network diagnostic utility that tests reachability and measures round-trip time using ICMP Echo messages. A reply shows that the target is reachable, and the reported time and any lost replies help diagnose connectivity and latency problems.",
+      "example": "ping google.com"
+    },
+    {
+      "term": "Traceroute",
+      "definition": "A network diagnostic tool that identifies the intermediate routers through which packets travel to a destination. It works by sending packets with increasing time-to-live values, so each router along the path reveals itself, which helps locate where delays or failures occur.",
+      "example": "traceroute google.com"
+    },
+    {
+      "term": "VPN",
+      "definition": "Virtual Private Network creates an encrypted tunnel between a device and a VPN endpoint over another network. It protects data from eavesdropping on untrusted networks such as public Wi-Fi and can make the user appear to be located on the VPN server's network.",
+      "example": "Connecting to a company's private network through a VPN."
+    },
+    {
+      "term": "Proxy Server",
+      "definition": "A server that acts as an intermediary between a client and another server. Proxies can filter content, cache frequently requested pages to save bandwidth and hide a client's real IP address from the destination server.",
+      "example": "A browser sending web requests through a proxy server."
+    },
+    {
+      "term": "Load Balancer",
+      "definition": "A device or software system that distributes incoming traffic across multiple servers. This improves availability, speed and scalability because no single server becomes overloaded, and traffic can be redirected if one server fails.",
+      "example": "Distributing website visitors across three web servers."
+    },
+    {
+      "term": "VLAN",
+      "definition": "Virtual Local Area Network logically separates devices into different network segments on the same physical switching infrastructure. It reduces broadcast traffic and improves security by isolating groups of users, and devices in different VLANs need a router or layer 3 switch to communicate.",
+      "example": "Separating student and staff networks in a university."
+    },
+    {
+      "term": "OSI Model",
+      "definition": "A seven-layer conceptual model that explains how network communication functions. Each layer has a specific job and serves the layer above it, which helps engineers troubleshoot problems and understand how different protocols fit together.",
+      "example": "The seven layers are Physical, Data Link, Network, Transport, Session, Presentation and Application."
+    },
+    {
+      "term": "TCP/IP Model",
+      "definition": "A networking model that describes communication using four layers: Network Access, Internet, Transport and Application. It is the practical model on which the Internet is built and is simpler than the OSI model because it combines several OSI layers together.",
+      "example": "TCP operates at the Transport layer, while IP operates at the Internet layer."
+    },
+    {
+      "term": "Routing",
+      "definition": "The process of selecting paths for data packets to travel between different networks. Routers learn paths either from manually entered static routes or from dynamic routing protocols such as OSPF and BGP, and they select routes based on metrics like cost or distance.",
+      "example": "A router forwarding a packet from a home network to a remote server."
+    },
+    {
+      "term": "Packet Sniffing",
+      "definition": "The process of capturing and analyzing network traffic to inspect transmitted data. Network administrators use it for troubleshooting and monitoring, but attackers can use it to steal unencrypted data such as passwords, which is why encryption is important.",
+      "example": "Using Wireshark to inspect DNS requests and TCP packets."
+    },
+    {
+      "term": "Network Topology",
+      "definition": "The physical or logical arrangement of devices, links and nodes in a network. The chosen topology affects cost, performance, scalability and how easily failures can be found.",
+      "example": "A star layout where every computer connects to one central switch."
+    },
+    {
+      "term": "Bus Topology",
+      "definition": "A topology in which all devices share a single backbone cable. It is cheap and simple, but a break in the main cable can bring down the whole network.",
+      "example": "Early Ethernet networks using one coaxial cable to connect all computers."
+    },
+    {
+      "term": "Star Topology",
+      "definition": "A topology in which every device connects to a central device such as a switch or hub. A cable failure affects only one device, but the central device is a single point of failure.",
+      "example": "Office computers each connected by a cable to one switch."
+    },
+    {
+      "term": "Ring Topology",
+      "definition": "A topology in which each device connects to exactly two others, forming a closed loop. Data travels around the ring in one or both directions until it reaches its destination.",
+      "example": "A Token Ring network passing a token from device to device."
+    },
+    {
+      "term": "Mesh Topology",
+      "definition": "A topology in which devices are interconnected with several links, providing multiple paths for data. It is highly reliable but expensive because of the large number of connections.",
+      "example": "Backbone routers of an ISP connected to many other routers for redundancy."
+    },
+    {
+      "term": "Hybrid Topology",
+      "definition": "A network design that combines two or more basic topologies, such as star and bus. It lets organizations scale and adapt the network to different departments.",
+      "example": "A campus network where each building uses a star layout and buildings are joined by a ring."
+    },
+    {
+      "term": "Client-Server Model",
+      "definition": "A network architecture where clients request services and centralized servers provide them. It allows central management, security and storage of resources.",
+      "example": "A browser (client) requesting a page from a web server."
+    },
+    {
+      "term": "Peer-to-Peer (P2P) Network",
+      "definition": "A network in which every device can act as both client and server, sharing resources directly without a central server. It is easy to set up but harder to manage and secure.",
+      "example": "Two laptops sharing files directly over Wi-Fi."
+    },
+    {
+      "term": "Intranet",
+      "definition": "A private network that uses Internet technologies and is accessible only to an organization's members. It is used for internal websites, documents and tools.",
+      "example": "A company portal showing employee announcements and HR forms."
+    },
+    {
+      "term": "Extranet",
+      "definition": "A controlled private network that extends limited access to outside parties such as partners, suppliers or customers. Access is usually protected by authentication and VPNs.",
+      "example": "A supplier portal where vendors check purchase orders."
+    },
+    {
+      "term": "Network Interface Card (NIC)",
+      "definition": "A hardware component that connects a computer to a network and has a unique MAC address. It can be wired (Ethernet) or wireless (Wi-Fi).",
+      "example": "The Ethernet port on a laptop motherboard."
+    },
+    {
+      "term": "Ethernet",
+      "definition": "The most widely used wired LAN technology, defined by the IEEE 802.3 standards. It sends data in frames and supports speeds from 10 Mbps up to 100 Gbps and beyond.",
+      "example": "A Cat6 cable connecting a PC to a router at 1 Gbps."
+    },
+    {
+      "term": "Wi-Fi",
+      "definition": "A family of wireless networking technologies based on the IEEE 802.11 standards. It lets devices connect to a network using radio waves, typically in the 2.4 GHz, 5 GHz and 6 GHz bands.",
+      "example": "A smartphone connecting to a home router wirelessly."
+    },
+    {
+      "term": "Bluetooth",
+      "definition": "A short-range wireless technology used to connect personal devices at low power. It operates in the 2.4 GHz band and is commonly used for audio and accessories.",
+      "example": "Pairing a phone with wireless headphones."
+    },
+    {
+      "term": "Fiber Optic Cable",
+      "definition": "A cable that transmits data as pulses of light through thin glass or plastic strands. It offers very high bandwidth, long distances and immunity to electrical interference.",
+      "example": "Undersea cables carrying Internet traffic between continents."
+    },
+    {
+      "term": "Twisted Pair Cable",
+      "definition": "A cable with pairs of copper wires twisted together to reduce interference. It is the standard cable for Ethernet and comes as UTP or STP.",
+      "example": "A Cat5e cable between a PC and a wall socket."
+    },
+    {
+      "term": "Coaxial Cable",
+      "definition": "A cable with a central copper conductor surrounded by insulation and a metal shield. It resists interference well and is used for cable TV and broadband connections.",
+      "example": "The cable connecting a cable modem to the wall outlet."
+    },
+    {
+      "term": "RJ45 Connector",
+      "definition": "An 8-pin modular connector used at the ends of twisted pair Ethernet cables. It plugs into network ports on computers, switches and routers.",
+      "example": "The plastic clip-in plug on a LAN cable."
+    },
+    {
+      "term": "Repeater",
+      "definition": "A device that regenerates and retransmits a signal so it can travel a longer distance. It works at the physical layer and does not filter traffic.",
+      "example": "A Wi-Fi extender repeating a router's signal into a distant room."
+    },
+    {
+      "term": "Bridge",
+      "definition": "A device that connects two network segments and forwards frames between them based on MAC addresses. It reduces collisions by dividing a LAN into separate collision domains.",
+      "example": "A bridge joining two office floors into a single LAN."
+    },
+    {
+      "term": "Gateway",
+      "definition": "A node that connects networks that use different protocols and translates between them. It is also the point where traffic leaves one network to enter another.",
+      "example": "A home router acting as a gateway to the Internet."
+    },
+    {
+      "term": "Layer 3 Switch",
+      "definition": "A switch that can also perform routing functions using IP addresses. It is fast and commonly used for routing between VLANs inside an organization.",
+      "example": "A core switch routing traffic between the student VLAN and staff VLAN."
+    },
+    {
+      "term": "Patch Panel",
+      "definition": "A panel of ports used to organize and connect incoming network cables to switches using short patch cables. It makes cabling neat and easy to modify.",
+      "example": "A rack panel linking office wall sockets to a server room switch."
+    },
+    {
+      "term": "Network Attached Storage (NAS)",
+      "definition": "A dedicated storage device connected to a network that lets multiple users store and access files. It is commonly used for backups and file sharing.",
+      "example": "A small NAS box storing family photos accessible from every device."
+    },
+    {
+      "term": "Physical Layer",
+      "definition": "Layer 1 of the OSI model, responsible for transmitting raw bits over a medium. It defines cables, voltages, connectors and signalling.",
+      "example": "Electrical signals travelling through an Ethernet cable."
+    },
+    {
+      "term": "Data Link Layer",
+      "definition": "Layer 2 of the OSI model, responsible for node-to-node delivery within the same network using MAC addresses. It organizes bits into frames and handles error detection.",
+      "example": "An Ethernet switch forwarding frames by MAC address."
+    },
+    {
+      "term": "Network Layer",
+      "definition": "Layer 3 of the OSI model, responsible for logical addressing and routing packets between networks. IP operates at this layer.",
+      "example": "A router choosing the next hop for an IP packet."
+    },
+    {
+      "term": "Transport Layer",
+      "definition": "Layer 4 of the OSI model, responsible for end-to-end communication between applications. It provides segmentation, port numbers and, in the case of TCP, reliability.",
+      "example": "TCP breaking a file into segments and reassembling them."
+    },
+    {
+      "term": "Session Layer",
+      "definition": "Layer 5 of the OSI model, which establishes, manages and terminates sessions between applications. It also handles synchronization and checkpoints.",
+      "example": "Resuming an interrupted remote login session."
+    },
+    {
+      "term": "Presentation Layer",
+      "definition": "Layer 6 of the OSI model, which translates, encrypts and compresses data so the application layer can use it. It deals with formats such as JPEG and encryption.",
+      "example": "TLS encrypting data before it is sent to the web server."
+    },
+    {
+      "term": "Application Layer",
+      "definition": "Layer 7 of the OSI model, which provides network services directly to user applications. Protocols such as HTTP, SMTP and DNS operate here.",
+      "example": "A web browser using HTTP to load a page."
+    },
+    {
+      "term": "Frame",
+      "definition": "The data unit used at the data link layer. It contains source and destination MAC addresses, the payload and an error-checking field.",
+      "example": "An Ethernet frame sent from a PC to a switch."
+    },
+    {
+      "term": "Segment",
+      "definition": "The data unit used at the transport layer for TCP. Each segment has a header with port numbers, sequence numbers and flags.",
+      "example": "A large file being split into numbered TCP segments."
+    },
+    {
+      "term": "Datagram",
+      "definition": "A self-contained unit of data sent without a prior connection, such as a UDP or IP datagram. Each datagram is routed independently.",
+      "example": "A DNS query sent as a single UDP datagram."
+    },
+    {
+      "term": "MTU",
+      "definition": "Maximum Transmission Unit is the largest packet size that can be sent over a network link without fragmentation. For standard Ethernet it is 1500 bytes.",
+      "example": "Ethernet using an MTU of 1500 bytes."
+    },
+    {
+      "term": "Encapsulation",
+      "definition": "The process of adding protocol headers (and sometimes trailers) to data as it moves down the layers of a network model. Each layer wraps the data from the layer above.",
+      "example": "Application data wrapped in a TCP header, then an IP header, then an Ethernet header."
+    },
+    {
+      "term": "Throughput",
+      "definition": "The actual amount of data successfully transferred over a network in a given time. It is usually lower than bandwidth because of overhead, congestion and errors.",
+      "example": "A 100 Mbps link delivering only 80 Mbps during a file download."
+    },
+    {
+      "term": "Jitter",
+      "definition": "The variation in packet delay over time. High jitter harms real-time services such as voice and video calls.",
+      "example": "A video call stuttering because packets arrive at uneven intervals."
+    },
+    {
+      "term": "Round-Trip Time (RTT)",
+      "definition": "The time taken for a packet to travel to a destination and for the reply to return. It is a key measure of network responsiveness.",
+      "example": "A ping showing time=24 ms."
+    },
+    {
+      "term": "Time to Live (TTL)",
+      "definition": "A value in an IP packet that limits how many hops it can take before being discarded. Each router decreases it by one, which prevents packets from looping forever.",
+      "example": "A packet with TTL 64 dropping at 0 after 64 routers."
+    },
+    {
+      "term": "Quality of Service (QoS)",
+      "definition": "A set of techniques that prioritize certain types of traffic to guarantee performance. It helps ensure that voice and video are not delayed by bulk downloads.",
+      "example": "A router giving priority to VoIP calls over file downloads."
+    },
+    {
+      "term": "Traffic Shaping",
+      "definition": "A technique that controls the rate of outgoing traffic to match a desired profile. It smooths bursts and prevents congestion.",
+      "example": "Limiting a guest Wi-Fi network to 5 Mbps."
+    },
+    {
+      "term": "Full Duplex",
+      "definition": "A communication mode in which data can be sent and received at the same time. Modern switched Ethernet links operate in full duplex.",
+      "example": "A phone call where both people can talk simultaneously."
+    },
+    {
+      "term": "Half Duplex",
+      "definition": "A communication mode in which data can travel in both directions but only one direction at a time. It can cause collisions on shared media.",
+      "example": "A walkie-talkie where users take turns speaking."
+    },
+    {
+      "term": "Unicast",
+      "definition": "One-to-one communication in which data is sent from a single sender to a single specific receiver. Most Internet traffic is unicast.",
+      "example": "A laptop downloading a webpage from one web server."
+    },
+    {
+      "term": "Broadcast",
+      "definition": "One-to-all communication in which data is sent to every device on a network segment. Excessive broadcasts can slow a network.",
+      "example": "An ARP request asking all devices who owns an IP address."
+    },
+    {
+      "term": "Multicast",
+      "definition": "One-to-many communication in which data is sent to a group of interested receivers only. It saves bandwidth compared to sending separate copies.",
+      "example": "IPTV streaming a channel to many subscribed viewers."
+    },
+    {
+      "term": "Anycast",
+      "definition": "A routing method in which the same IP address is announced from multiple locations and traffic goes to the nearest one. It improves speed and resilience.",
+      "example": "Public DNS services using one IP address served from many data centres."
+    },
+    {
+      "term": "Broadcast Domain",
+      "definition": "The set of devices that receive each other's broadcast frames. Routers and VLANs separate broadcast domains.",
+      "example": "All devices in one VLAN receiving the same ARP broadcast."
+    },
+    {
+      "term": "Collision Domain",
+      "definition": "A network segment where data packets can collide when sent at the same time. Switches divide collision domains so each port is its own domain.",
+      "example": "Computers connected to one hub sharing a single collision domain."
+    },
+    {
+      "term": "CSMA/CD",
+      "definition": "Carrier Sense Multiple Access with Collision Detection is an older Ethernet method where devices listen before sending and stop when a collision is detected. Modern full duplex switches no longer need it.",
+      "example": "Devices on a hub waiting a random time after detecting a collision."
+    },
+    {
+      "term": "CSMA/CA",
+      "definition": "Carrier Sense Multiple Access with Collision Avoidance is used in Wi-Fi to avoid collisions by waiting and sometimes exchanging request-to-send signals. It is used because wireless devices cannot detect collisions easily.",
+      "example": "Laptops waiting for the channel to be free before transmitting over Wi-Fi."
+    },
+    {
+      "term": "Circuit Switching",
+      "definition": "A method in which a dedicated communication path is established for the entire duration of a session. It gives constant quality but wastes capacity when idle.",
+      "example": "A traditional landline telephone call."
+    },
+    {
+      "term": "Packet Switching",
+      "definition": "A method in which data is divided into packets that are routed independently across the network. It uses bandwidth efficiently and is the basis of the Internet.",
+      "example": "Sending an email broken into many packets that take different paths."
+    },
+    {
+      "term": "Multiplexing",
+      "definition": "A technique for combining multiple signals into one channel to share a transmission medium. It increases the efficiency of the link.",
+      "example": "Several phone calls carried over one fibre cable."
+    },
+    {
+      "term": "Three-Way Handshake",
+      "definition": "The process TCP uses to establish a connection with SYN, SYN-ACK and ACK messages. It makes sure both sides are ready and agree on starting sequence numbers.",
+      "example": "A browser sending SYN, the server replying SYN-ACK, and the browser sending ACK."
+    },
+    {
+      "term": "Flow Control",
+      "definition": "A mechanism that prevents a fast sender from overwhelming a slow receiver. TCP uses a window size to control how much data can be sent before an acknowledgement.",
+      "example": "A receiver advertising a small window to slow the sender."
+    },
+    {
+      "term": "Congestion Control",
+      "definition": "Techniques that reduce the sending rate when the network is overloaded. TCP uses algorithms such as slow start and congestion avoidance.",
+      "example": "TCP lowering its speed after detecting lost packets."
+    },
+    {
+      "term": "Sliding Window",
+      "definition": "A TCP technique that allows several segments to be sent before acknowledgements arrive. The window moves forward as acknowledgements are received.",
+      "example": "Sending 10 segments at once and sliding forward as ACKs return."
+    },
+    {
+      "term": "Trunk Port",
+      "definition": "A switch port that carries traffic for multiple VLANs between switches or to a router. Frames are tagged with VLAN IDs, commonly using the 802.1Q standard.",
+      "example": "A link between two switches carrying VLAN 10 and VLAN 20."
+    },
+    {
+      "term": "Spanning Tree Protocol (STP)",
+      "definition": "A protocol that prevents loops in switched networks by blocking redundant paths. If an active link fails, a blocked link can be enabled.",
+      "example": "Switches automatically blocking one cable to avoid a broadcast storm."
+    },
+    {
+      "term": "Link Aggregation",
+      "definition": "Combining multiple physical network links into one logical link to increase bandwidth and redundancy. It is commonly done with LACP.",
+      "example": "Two 1 Gbps cables bonded to act as a 2 Gbps connection."
+    },
+    {
+      "term": "Port Mirroring",
+      "definition": "A switch feature that copies traffic from one port to another for monitoring. It is used with analyzers and intrusion detection systems.",
+      "example": "Copying all server traffic to a port where Wireshark is running."
+    },
+    {
+      "term": "Power over Ethernet (PoE)",
+      "definition": "A technology that delivers electrical power and data over the same Ethernet cable. It simplifies installation of devices such as cameras and access points.",
+      "example": "An IP camera powered by a PoE switch with no separate adapter."
+    },
+    {
+      "term": "Port Forwarding",
+      "definition": "A router configuration that sends incoming traffic on a specific port to a particular device inside the private network. It makes internal services reachable from outside.",
+      "example": "Forwarding port 25565 to a game server on a home PC."
+    },
+    {
+      "term": "DMZ",
+      "definition": "Demilitarized Zone is a separate network segment that hosts public-facing services, isolating them from the internal network. If a server in the DMZ is compromised, the internal network stays protected.",
+      "example": "Placing a company web server in a DMZ between two firewalls."
+    },
+    {
+      "term": "Intrusion Detection System (IDS)",
+      "definition": "A system that monitors network or host activity for suspicious behavior and generates alerts. It detects threats but does not block them by itself.",
+      "example": "Snort alerting administrators about a port scan."
+    },
+    {
+      "term": "Intrusion Prevention System (IPS)",
+      "definition": "A security system that not only detects malicious activity but also automatically blocks or stops it. It is usually placed inline with network traffic.",
+      "example": "An IPS dropping packets that match a known exploit."
+    },
+    {
+      "term": "Honeypot",
+      "definition": "A decoy system deliberately made attractive to attackers so their methods can be studied or they can be diverted from real assets. Any interaction with it is suspicious.",
+      "example": "A fake server with weak passwords that logs every login attempt."
+    },
+    {
+      "term": "Network Segmentation",
+      "definition": "Dividing a network into smaller, isolated segments to limit the spread of attacks and improve performance. Firewalls and VLANs are commonly used.",
+      "example": "Placing guest Wi-Fi on a separate network from company computers."
+    },
+    {
+      "term": "Zero Trust",
+      "definition": "A security model based on never trusting any user or device automatically, even inside the network. Every access request must be verified continuously.",
+      "example": "Requiring multi-factor authentication for each application, even from the office LAN."
+    },
+    {
+      "term": "Access Control List (ACL)",
+      "definition": "An ordered list of rules on a router or firewall that permits or denies traffic based on information such as IP address, port or protocol. Rules are evaluated from top to bottom.",
+      "example": "An ACL blocking Telnet traffic to a server."
+    },
+    {
+      "term": "TLS",
+      "definition": "Transport Layer Security is a protocol that provides encryption, authentication and integrity for data sent over a network. It is the modern successor to SSL and secures HTTPS.",
+      "example": "A browser showing a padlock after a TLS handshake."
+    },
+    {
+      "term": "SSL",
+      "definition": "Secure Sockets Layer is the older protocol that was used to secure network communication and was replaced by TLS because of security flaws. The name is still often used informally.",
+      "example": "An old website certificate called an SSL certificate."
+    },
+    {
+      "term": "IPsec",
+      "definition": "A suite of protocols that secures IP communication by authenticating and encrypting each packet. It is widely used in VPNs.",
+      "example": "A site-to-site VPN between two offices using IPsec."
+    },
+    {
+      "term": "WPA2",
+      "definition": "Wi-Fi Protected Access 2 is a wireless security standard that uses AES encryption to protect Wi-Fi traffic. It was long the standard for secure home and business networks.",
+      "example": "A home Wi-Fi network secured with WPA2-Personal and a passphrase."
+    },
+    {
+      "term": "WPA3",
+      "definition": "The latest Wi-Fi security standard that improves on WPA2 with stronger encryption and protection against offline password guessing through SAE. It also gives better security on open networks.",
+      "example": "A modern router offering WPA3 for newer devices."
+    },
+    {
+      "term": "WEP",
+      "definition": "Wired Equivalent Privacy is an obsolete Wi-Fi security protocol with serious weaknesses that allow keys to be cracked in minutes. It should never be used today.",
+      "example": "An old router still configured with WEP being easily cracked."
+    },
+    {
+      "term": "SSID",
+      "definition": "Service Set Identifier is the name of a Wi-Fi network that is broadcast so users can find and select it. Hiding it does not provide real security.",
+      "example": "A network named HomeWiFi appearing in the list of available networks."
+    },
+    {
+      "term": "802.11",
+      "definition": "The IEEE family of standards for wireless LAN communication, including versions like 802.11n, 802.11ac and 802.11ax. Each version offers different speeds and frequency bands.",
+      "example": "A Wi-Fi 6 router using the 802.11ax standard."
+    },
+    {
+      "term": "Wi-Fi Channel",
+      "definition": "A specific radio frequency range used by a Wi-Fi network. Choosing a less crowded channel reduces interference from neighboring networks.",
+      "example": "Setting a router to channel 1, 6 or 11 on 2.4 GHz."
+    },
+    {
+      "term": "Captive Portal",
+      "definition": "A web page shown to users who connect to a Wi-Fi network before they can access the Internet. It is often used for login, payment or accepting terms.",
+      "example": "A hotel Wi-Fi asking for a room number before granting access."
+    },
+    {
+      "term": "Wi-Fi Protected Setup (WPS)",
+      "definition": "A feature intended to make connecting devices to Wi-Fi easier using a PIN or button. The PIN method has known weaknesses, so it is often recommended to disable it.",
+      "example": "Pressing the WPS button on a router to connect a printer."
+    },
+    {
+      "term": "Site-to-Site VPN",
+      "definition": "A VPN that permanently connects two entire networks over the Internet through an encrypted tunnel. Users do not need to run VPN software on their devices.",
+      "example": "A company linking its head office and branch office networks securely."
+    },
+    {
+      "term": "CIDR",
+      "definition": "Classless Inter-Domain Routing is a method of allocating IP addresses using a prefix length instead of fixed classes. It allows flexible network sizes and reduces routing table size.",
+      "example": "192.168.10.0/24 describing a network with 256 addresses."
+    },
+    {
+      "term": "VLSM",
+      "definition": "Variable Length Subnet Masking allows subnets of different sizes within the same network, avoiding wasted addresses. Larger subnets are assigned to larger groups.",
+      "example": "Using a /26 for a lab and a /30 for a router link."
+    },
+    {
+      "term": "Private IP Address",
+      "definition": "An address reserved for use inside private networks and not routable on the public Internet. The ranges are 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16.",
+      "example": "192.168.1.20 assigned to a home laptop."
+    },
+    {
+      "term": "Public IP Address",
+      "definition": "A globally unique address assigned by an ISP that can be reached over the Internet. It identifies a network or device to the outside world.",
+      "example": "The IP address a website sees when you visit it."
+    },
+    {
+      "term": "Static IP Address",
+      "definition": "An IP address manually assigned to a device that does not change over time. It is used for servers, printers and equipment that must always be reachable.",
+      "example": "A server always using 192.168.1.50."
+    },
+    {
+      "term": "Dynamic IP Address",
+      "definition": "An IP address automatically assigned by a DHCP server that may change over time. It simplifies management for ordinary client devices.",
+      "example": "A phone getting a new address each time it joins Wi-Fi."
+    },
+    {
+      "term": "APIPA",
+      "definition": "Automatic Private IP Addressing lets a device assign itself an address in the 169.254.0.0/16 range when no DHCP server responds. It allows only local communication.",
+      "example": "A PC showing 169.254.12.7 because DHCP failed."
+    },
+    {
+      "term": "Loopback Address",
+      "definition": "A special IP address (127.0.0.1 for IPv4) that sends traffic back to the same device. It is used to test the local network stack.",
+      "example": "ping 127.0.0.1 to test the TCP/IP stack."
+    },
+    {
+      "term": "Localhost",
+      "definition": "The hostname that refers to the current computer and normally resolves to the loopback address. Developers use it to test applications locally.",
+      "example": "Opening http://localhost:3000 in a browser."
+    },
+    {
+      "term": "Broadcast Address",
+      "definition": "The last address of a subnet, used to send data to all hosts in that subnet. In 192.168.1.0/24 it is 192.168.1.255.",
+      "example": "192.168.1.255 reaching every device on the local network."
+    },
+    {
+      "term": "Network Address",
+      "definition": "The first address of a subnet that identifies the network itself and cannot be assigned to a host. In 192.168.1.0/24 it is 192.168.1.0.",
+      "example": "192.168.1.0 identifying a home network."
+    },
+    {
+      "term": "Default Route",
+      "definition": "A routing table entry used when no more specific route matches a destination. It is written as 0.0.0.0/0 and normally points to the Internet gateway.",
+      "example": "A route 0.0.0.0/0 via 192.168.1.1."
+    },
+    {
+      "term": "Static Routing",
+      "definition": "A method where an administrator manually enters routes into a router. It is simple and predictable but does not adapt to network changes.",
+      "example": "Adding a route to 10.1.0.0/16 through a specific next hop."
+    },
+    {
+      "term": "Dynamic Routing",
+      "definition": "A method in which routers automatically learn and update routes using routing protocols. It adapts to link failures and changes.",
+      "example": "OSPF routers sharing their routes automatically."
+    },
+    {
+      "term": "RIP",
+      "definition": "Routing Information Protocol is a simple distance-vector routing protocol that uses hop count as its metric, with a maximum of 15 hops. It is suitable only for small networks.",
+      "example": "A small office router using RIP to share routes."
+    },
+    {
+      "term": "OSPF",
+      "definition": "Open Shortest Path First is a link-state routing protocol that calculates the best path using cost. It converges quickly and scales to large enterprise networks.",
+      "example": "Routers inside a company network building a map of the topology with OSPF."
+    },
+    {
+      "term": "BGP",
+      "definition": "Border Gateway Protocol is the routing protocol that exchanges routes between autonomous systems and holds the Internet together. It selects paths based on policies and attributes.",
+      "example": "An ISP announcing its IP ranges to other ISPs through BGP."
+    },
+    {
+      "term": "EIGRP",
+      "definition": "Enhanced Interior Gateway Routing Protocol is an advanced distance-vector protocol developed by Cisco that uses bandwidth and delay in its metric. It converges quickly with low overhead.",
+      "example": "Cisco routers in a company using EIGRP to share routes."
+    },
+    {
+      "term": "Autonomous System (AS)",
+      "definition": "A group of networks under a single administrative control that presents a common routing policy to the Internet. Each AS is identified by an AS number.",
+      "example": "An ISP operating under AS number 12345."
+    },
+    {
+      "term": "Routing Table",
+      "definition": "A data table stored in a router or computer that lists routes to network destinations. It includes the destination network, next hop and metric.",
+      "example": "Running route print to view a Windows routing table."
+    },
+    {
+      "term": "Hop Count",
+      "definition": "The number of routers a packet passes through to reach its destination. Some protocols, such as RIP, use it to choose the best route.",
+      "example": "A traceroute showing 12 hops to a server."
+    },
+    {
+      "term": "Route Convergence",
+      "definition": "The state in which all routers in a network have consistent and up-to-date routing information after a change. Faster convergence means less downtime.",
+      "example": "OSPF routers recalculating paths after a link failure."
+    },
+    {
+      "term": "Domain Name",
+      "definition": "A human-readable name used to identify a website or service on the Internet, such as example.com. It is mapped to an IP address through DNS.",
+      "example": "wikipedia.org"
+    },
+    {
+      "term": "FQDN",
+      "definition": "A Fully Qualified Domain Name specifies the exact location of a host in the DNS hierarchy, including the hostname and all parent domains. It ends at the root.",
+      "example": "mail.example.com"
+    },
+    {
+      "term": "DNS Resolver",
+      "definition": "A server or service that receives DNS queries from clients and finds the answers by contacting other DNS servers. It also caches results.",
+      "example": "A router forwarding queries to the ISP's DNS resolver."
+    },
+    {
+      "term": "Root Name Server",
+      "definition": "One of the top-level DNS servers that know where to find the servers for each top-level domain. There are 13 root server identities distributed around the world.",
+      "example": "A resolver asking a root server where to find the .com servers."
+    },
+    {
+      "term": "Authoritative Name Server",
+      "definition": "A DNS server that holds the official records for a domain and gives definitive answers about it. It does not rely on cache.",
+      "example": "A company's DNS server storing the IP address of www.company.com."
+    },
+    {
+      "term": "DNS Cache",
+      "definition": "Temporary storage of previous DNS lookups on a device or resolver so that repeated queries are answered faster. Entries expire according to their TTL.",
+      "example": "A computer remembering google.com's IP address for a short time."
+    },
+    {
+      "term": "A Record",
+      "definition": "A DNS record that maps a domain name to an IPv4 address. It is the most common record type.",
+      "example": "example.com mapping to 93.184.216.34."
+    },
+    {
+      "term": "AAAA Record",
+      "definition": "A DNS record that maps a domain name to an IPv6 address. It is the IPv6 equivalent of an A record.",
+      "example": "example.com mapping to 2001:db8::10."
+    },
+    {
+      "term": "CNAME Record",
+      "definition": "A DNS record that makes one domain name an alias of another. The resolver then looks up the target name.",
+      "example": "www.example.com pointing to example.com."
+    },
+    {
+      "term": "MX Record",
+      "definition": "A DNS record that specifies the mail servers responsible for receiving email for a domain, with priority values. Lower numbers are tried first.",
+      "example": "An MX record directing email to mail.example.com."
+    },
+    {
+      "term": "NS Record",
+      "definition": "A DNS record that identifies the authoritative name servers for a domain. It tells resolvers where to find the domain's records.",
+      "example": "example.com having NS records for ns1.example.com and ns2.example.com."
+    },
+    {
+      "term": "PTR Record",
+      "definition": "A DNS record used for reverse lookups that maps an IP address back to a domain name. It is often used in email server verification.",
+      "example": "Looking up 8.8.8.8 and getting dns.google."
+    },
+    {
+      "term": "TXT Record",
+      "definition": "A DNS record that stores arbitrary text data. It is commonly used for domain verification and email security settings such as SPF and DKIM.",
+      "example": "A TXT record proving ownership of a domain to a service."
+    },
+    {
+      "term": "DNSSEC",
+      "definition": "DNS Security Extensions add digital signatures to DNS data so resolvers can verify it is authentic and unchanged. It helps prevent attacks such as DNS spoofing.",
+      "example": "A resolver validating a signed record for a bank's domain."
+    },
+    {
+      "term": "URL",
+      "definition": "Uniform Resource Locator is the complete web address that specifies the protocol, domain and path of a resource. It tells a browser where and how to fetch it.",
+      "example": "https://www.example.com/index.html"
+    },
+    {
+      "term": "Web Server",
+      "definition": "Software or hardware that stores website files and delivers them to clients over HTTP or HTTPS. It processes requests and sends back responses.",
+      "example": "Apache or Nginx serving a website to visitors."
+    },
+    {
+      "term": "HTTP Status Code",
+      "definition": "A three-digit number returned by a server to show the result of a request. The first digit indicates the category, such as success, redirection or error.",
+      "example": "404 meaning Not Found and 200 meaning OK."
+    },
+    {
+      "term": "HTTP GET",
+      "definition": "An HTTP method used to request data from a server without changing anything. Parameters are visible in the URL.",
+      "example": "Opening a news article page in a browser."
+    },
+    {
+      "term": "HTTP POST",
+      "definition": "An HTTP method used to send data to a server, such as a form submission. The data is carried in the body of the request.",
+      "example": "Submitting a login form to a website."
+    },
+    {
+      "term": "Cookie",
+      "definition": "A small piece of data stored in a browser by a website to remember information about the user. Cookies are used for sessions, preferences and tracking.",
+      "example": "A shopping site remembering items in your cart."
+    },
+    {
+      "term": "CDN",
+      "definition": "Content Delivery Network is a distributed group of servers that delivers web content from locations closer to users. It improves speed and reduces load on the origin server.",
+      "example": "A video website serving files from a nearby CDN server."
+    },
+    {
+      "term": "REST API",
+      "definition": "An application programming interface that uses HTTP methods and URLs to access and manipulate resources, usually exchanging data in JSON. It is stateless and widely used for web services.",
+      "example": "GET /api/users/5 returning user data in JSON."
+    },
+    {
+      "term": "WebSocket",
+      "definition": "A protocol that provides a continuous two-way communication channel between a browser and server over a single TCP connection. It is used for real-time applications.",
+      "example": "A live chat application updating instantly."
+    },
+    {
+      "term": "Reverse Proxy",
+      "definition": "A server that sits in front of web servers and forwards client requests to them. It can provide load balancing, caching and added security.",
+      "example": "Nginx receiving all visitor requests and passing them to backend servers."
+    },
+    {
+      "term": "SNMP",
+      "definition": "Simple Network Management Protocol is used to monitor and manage network devices such as routers and switches. Devices report status information to a management system.",
+      "example": "A monitoring tool checking a switch's port usage via SNMP."
+    },
+    {
+      "term": "NTP",
+      "definition": "Network Time Protocol synchronizes the clocks of computers over a network. Accurate time is important for logs, authentication and security.",
+      "example": "A server updating its clock from time.google.com."
+    },
+    {
+      "term": "TFTP",
+      "definition": "Trivial File Transfer Protocol is a simple, unauthenticated file transfer protocol using UDP port 69. It is mainly used for booting devices and updating firmware.",
+      "example": "A router loading its configuration file from a TFTP server."
+    },
+    {
+      "term": "SFTP",
+      "definition": "SSH File Transfer Protocol transfers files securely over an encrypted SSH connection. It replaces plain FTP in most secure environments.",
+      "example": "Uploading website files with sftp user@server."
+    },
+    {
+      "term": "LDAP",
+      "definition": "Lightweight Directory Access Protocol is used to access and manage directory services that store information about users and resources. It is commonly used for centralized authentication.",
+      "example": "A company login system checking usernames in a directory server."
+    },
+    {
+      "term": "Kerberos",
+      "definition": "A network authentication protocol that uses tickets and a trusted key server so users can prove their identity securely. It is used in Windows Active Directory domains.",
+      "example": "A user logging in once and receiving a ticket to access multiple services."
+    },
+    {
+      "term": "RDP",
+      "definition": "Remote Desktop Protocol allows a user to control another Windows computer graphically over a network. It uses port 3389 by default.",
+      "example": "An administrator connecting to a Windows server's desktop remotely."
+    },
+    {
+      "term": "SMB",
+      "definition": "Server Message Block is a protocol used for sharing files, printers and other resources on a network, mainly in Windows environments. It has been targeted by serious exploits in old versions.",
+      "example": "Accessing a shared folder at \\\\server\\documents."
+    },
+    {
+      "term": "NFS",
+      "definition": "Network File System is a protocol that allows a computer to access files over a network as if they were on local storage. It is widely used in Unix and Linux systems.",
+      "example": "A Linux computer mounting a shared directory from a file server."
+    },
+    {
+      "term": "DHCP Lease",
+      "definition": "The length of time a DHCP server allows a client to use an assigned IP address. The client must renew it before it expires.",
+      "example": "A laptop given an address with a 24-hour lease."
+    },
+    {
+      "term": "VoIP",
+      "definition": "Voice over IP delivers voice communication as data packets over IP networks. It replaces traditional telephone lines with Internet-based calls.",
+      "example": "Making a call through WhatsApp or Skype."
+    },
+    {
+      "term": "SIP",
+      "definition": "Session Initiation Protocol is a signalling protocol used to start, manage and end voice and video calls over IP networks. It works with VoIP systems.",
+      "example": "An IP phone using SIP to call another extension."
+    },
+    {
+      "term": "Wireshark",
+      "definition": "A popular open-source network protocol analyzer that captures and displays packets in detail. It is used for troubleshooting, learning and security analysis.",
+      "example": "Capturing traffic to inspect a TCP three-way handshake."
+    },
+    {
+      "term": "Nmap",
+      "definition": "A widely used network scanning tool that discovers hosts and open ports and can detect services and operating systems. It is used by administrators and security testers.",
+      "example": "nmap -sV 192.168.1.1"
+    },
+    {
+      "term": "Network Monitoring",
+      "definition": "The continuous observation of a network to detect failures, slowdowns and unusual activity. It uses tools that collect and analyze performance data.",
+      "example": "A dashboard alerting administrators when a link is overloaded."
+    },
+    {
+      "term": "PAT",
+      "definition": "Port Address Translation is a type of NAT that maps many private addresses to one public address by using different port numbers. It is the most common form of NAT.",
+      "example": "Many devices sharing one public IP via unique source ports."
+    },
+    {
+      "term": "Software-Defined Networking (SDN)",
+      "definition": "An approach that separates the network's control plane from the data plane so it can be managed centrally by software. It makes networks more flexible and programmable.",
+      "example": "A controller configuring all switches in a data centre from one place."
+    },
+    {
+      "term": "Wake-on-LAN",
+      "definition": "A feature that lets a computer be turned on remotely by sending a special network packet called a magic packet. The target's network card must support it.",
+      "example": "Waking a sleeping office PC from home."
+    },
+    {
+      "term": "IoT",
+      "definition": "Internet of Things refers to everyday physical devices connected to the Internet that collect and exchange data. They often have limited security and must be protected carefully.",
+      "example": "A smart thermostat controlled through a phone app."
+    },
+    {
+      "term": "Port Security",
+      "definition": "A switch feature that limits which MAC addresses can use a port. It helps prevent unauthorized devices from connecting to the network.",
+      "example": "A switch port shutting down when an unknown laptop is plugged in."
+    }
+  ],
+  "Linux Commands": [
+    {
+      "term": "pwd",
+      "definition": "Displays the full path of the current working directory. It stands for print working directory and is useful for confirming your location before running commands that use relative paths.",
+      "example": "pwd"
+    },
+    {
+      "term": "ls",
+      "definition": "Lists files and directories in the current directory. Common options include -l for a detailed list, -a to show hidden files and -h for human-readable sizes.",
+      "example": "ls -la"
+    },
+    {
+      "term": "cd",
+      "definition": "Changes the current working directory. Using cd with no argument takes you to your home directory, and .. moves up to the parent directory.",
+      "example": "cd /home/yasir"
+    },
+    {
+      "term": "mkdir",
+      "definition": "Creates a new directory. The -p option creates parent directories as needed, which allows an entire path to be created in one command.",
+      "example": "mkdir cybersecurity"
+    },
+    {
+      "term": "rmdir",
+      "definition": "Removes an empty directory. It fails if the directory contains any files, which protects against accidental deletion; rm -r is used for non-empty directories.",
+      "example": "rmdir old_folder"
+    },
+    {
+      "term": "touch",
+      "definition": "Creates an empty file or updates its timestamps. If the file already exists, only its access and modification times are updated and the file contents remain unchanged.",
+      "example": "touch notes.txt"
+    },
+    {
+      "term": "cp",
+      "definition": "Copies files or directories from one location to another. Use -r to copy directories recursively and -i to be asked before overwriting an existing file.",
+      "example": "cp notes.txt backup.txt"
+    },
+    {
+      "term": "mv",
+      "definition": "Moves files or directories or renames them. Because it works within the same filesystem by changing the directory entry, moving is usually instant, and the same command is used for renaming.",
+      "example": "mv old.txt new.txt"
+    },
+    {
+      "term": "rm",
+      "definition": "Removes files or directories. Deleted files normally do not go to a trash folder and cannot be easily recovered, so options like -i and careful use of -r and -f are important.",
+      "example": "rm unwanted.txt"
+    },
+    {
+      "term": "cat",
+      "definition": "Displays the contents of a file in the terminal. It can also join several files together or create a file when used with redirection, and its name comes from the word concatenate.",
+      "example": "cat notes.txt"
+    },
+    {
+      "term": "less",
+      "definition": "Displays file contents one screen at a time and allows navigation. Unlike cat, it does not load the whole file at once, so it works well for large logs; press q to quit and / to search.",
+      "example": "less system.log"
+    },
+    {
+      "term": "head",
+      "definition": "Displays the first lines of a file. By default it shows the first ten lines, and the -n option changes that number.",
+      "example": "head -n 10 access.log"
+    },
+    {
+      "term": "tail",
+      "definition": "Displays the last lines of a file. The -f option follows the file and prints new lines as they are added, which is very useful for watching live logs.",
+      "example": "tail -f system.log"
+    },
+    {
+      "term": "nano",
+      "definition": "Opens a simple terminal-based text editor. It shows keyboard shortcuts at the bottom of the screen, such as Ctrl+O to save and Ctrl+X to exit, which makes it beginner-friendly.",
+      "example": "nano notes.txt"
+    },
+    {
+      "term": "grep",
+      "definition": "Searches text for lines matching a specified pattern. Options such as -i (ignore case), -r (search recursively) and -n (show line numbers) make it one of the most powerful tools for analyzing logs.",
+      "example": "grep 'error' system.log"
+    },
+    {
+      "term": "find",
+      "definition": "Searches for files and directories based on specified conditions. It can search by name, type, size, owner or modification time and can run a command on each result, making it useful for locating suspicious or large files.",
+      "example": "find /home -name '*.txt'"
+    },
+    {
+      "term": "locate",
+      "definition": "Quickly finds files using a previously generated filename database. It is faster than find because it searches a database, but results may be outdated until the database is refreshed with updatedb.",
+      "example": "locate passwd"
+    },
+    {
+      "term": "which",
+      "definition": "Displays the location of an executable command found in the PATH. It helps determine which version of a program will run when several are installed, by searching the directories listed in the PATH variable in order.",
+      "example": "which python3"
+    },
+    {
+      "term": "whereis",
+      "definition": "Locates the binary, source and manual files associated with a command. Unlike which, it also reports documentation and source locations, giving a more complete picture of where a program is installed.",
+      "example": "whereis ls"
+    },
+    {
+      "term": "chmod",
+      "definition": "Changes the permissions of files and directories. Permissions can be set with numeric values (such as 755) or symbolic notation (such as u+x) for the owner, group and others.",
+      "example": "chmod 755 script.sh"
+    },
+    {
+      "term": "chown",
+      "definition": "Changes the ownership of a file or directory. Only the root user can normally change a file's owner, and the -R option applies the change recursively to a directory and its contents.",
+      "example": "sudo chown yasir:students notes.txt"
+    },
+    {
+      "term": "chgrp",
+      "definition": "Changes the group ownership of a file or directory. It is useful for letting a team of users share files, and a regular user can only change the group to one they belong to.",
+      "example": "chgrp students notes.txt"
+    },
+    {
+      "term": "umask",
+      "definition": "Sets the default permission mask for newly created files and directories. The mask is subtracted from the default permissions, so a umask of 022 results in new files with 644 and new directories with 755 permissions.",
+      "example": "umask 022"
+    },
+    {
+      "term": "whoami",
+      "definition": "Displays the username of the currently logged-in user. It is handy in scripts and after using sudo or su to confirm which account is currently running commands.",
+      "example": "whoami"
+    },
+    {
+      "term": "id",
+      "definition": "Displays the user ID, primary group ID and supplementary groups of a user. It also shows the numeric identifiers (UID and GID), which the system uses internally instead of names to control access.",
+      "example": "id yasir"
+    },
+    {
+      "term": "who",
+      "definition": "Displays users currently logged into the system. It lists the login name, terminal and login time of each session, which helps administrators notice unexpected logins.",
+      "example": "who"
+    },
+    {
+      "term": "passwd",
+      "definition": "Changes a user's password. Regular users can change only their own password, while root can change any account's password and can also lock or expire accounts.",
+      "example": "passwd"
+    },
+    {
+      "term": "useradd",
+      "definition": "Creates a new user account. On many systems it needs options such as -m to create the home directory and -s to set the login shell.",
+      "example": "sudo useradd -m ali"
+    },
+    {
+      "term": "usermod",
+      "definition": "Modifies an existing user account. It can change a user's groups, home directory, shell or login name, and the -aG option adds a user to additional groups without removing existing ones.",
+      "example": "sudo usermod -aG sudo ali"
+    },
+    {
+      "term": "userdel",
+      "definition": "Deletes a user account. By default it leaves the user's home directory in place, and the -r option removes the home directory and mail spool as well.",
+      "example": "sudo userdel ali"
+    },
+    {
+      "term": "groupadd",
+      "definition": "Creates a new user group. Groups let administrators manage permissions for many users at once by assigning access to the group instead of to each person.",
+      "example": "sudo groupadd cybersecurity"
+    },
+    {
+      "term": "groups",
+      "definition": "Displays the groups to which a user belongs. Group membership decides which shared files and resources a user can access, so reviewing it is a common part of security checks.",
+      "example": "groups yasir"
+    },
+    {
+      "term": "sudo",
+      "definition": "Runs a command with elevated privileges according to the system's sudo configuration. It logs each command and lets administrators give limited privileges to users without sharing the root password, with the rules defined in /etc/sudoers.",
+      "example": "sudo apt update"
+    },
+    {
+      "term": "su",
+      "definition": "Switches to another user account or starts a shell as another user. Using a dash (su -) starts a login shell with the target user's environment, and switching to root usually requires the root password.",
+      "example": "su - ali"
+    },
+    {
+      "term": "ps",
+      "definition": "Displays information about currently running processes. The aux and -ef option styles show all processes with their owners and process IDs, which are needed when investigating or terminating a process.",
+      "example": "ps aux"
+    },
+    {
+      "term": "top",
+      "definition": "Displays real-time information about system processes and resource usage. It updates continuously, shows CPU and memory usage per process, and lets you press keys to sort or kill processes; q exits.",
+      "example": "top"
+    },
+    {
+      "term": "kill",
+      "definition": "Sends a signal to a process, commonly to terminate it. By default it sends the SIGTERM signal to politely ask a process to stop, while kill -9 sends SIGKILL to force it to end immediately.",
+      "example": "kill 1234"
+    },
+    {
+      "term": "killall",
+      "definition": "Sends a signal to processes matching a specified process name. It is convenient when many processes share a name, but it should be used carefully because it ends every matching process.",
+      "example": "killall firefox"
+    },
+    {
+      "term": "df",
+      "definition": "Displays available and used disk space on mounted filesystems. The -h option shows sizes in human-readable units, and the command helps spot a full disk that could cause system problems.",
+      "example": "df -h"
+    },
+    {
+      "term": "du",
+      "definition": "Displays the disk space used by files and directories. Using -s gives a total for each argument and -h gives readable sizes, which helps find which folders are consuming the most space.",
+      "example": "du -sh /home/yasir"
+    },
+    {
+      "term": "free",
+      "definition": "Displays information about used and available system memory. It shows total, used, free, cached and swap memory, which helps in understanding whether the system is running low on RAM.",
+      "example": "free -h"
+    },
+    {
+      "term": "uname",
+      "definition": "Displays information about the operating system and kernel. The -a option prints everything, including kernel name, hostname, kernel version and architecture, which is useful when checking compatibility or known vulnerabilities.",
+      "example": "uname -a"
+    },
+    {
+      "term": "hostname",
+      "definition": "Displays or sets the system's hostname. The hostname identifies the machine on a network and appears in the shell prompt and in log files.",
+      "example": "hostname"
+    },
+    {
+      "term": "cd /",
+      "definition": "Navigates to the top-level root directory of the entire system. From the root directory you can reach every other folder, such as /etc for configuration files, /home for users and /var for logs.",
+      "example": "cd /"
+    },
+    {
+      "term": "ping",
+      "definition": "Tests network reachability and measures round-trip time using ICMP. It sends echo requests until stopped (or for a set number with -c), and the replies show packet loss and response time.",
+      "example": "ping -c 4 8.8.8.8"
+    },
+    {
+      "term": "cd -",
+      "definition": "Toggles back to the previous working directory you were just in ($OLDPWD). It prints the previous directory and returns to it, which is faster than typing a long path when switching between two locations.",
+      "example": "cd - "
+    },
+    {
+      "term": "curl",
+      "definition": "Transfers data to or from a server using supported network protocols. It supports many protocols and options such as -I to view headers and -o to save output, and it is widely used for testing web APIs.",
+      "example": "curl https://example.com"
+    },
+    {
+      "term": "wget",
+      "definition": "Downloads files from the web using supported protocols. It can download in the background, resume interrupted downloads with -c, and fetch entire websites recursively.",
+      "example": "wget https://example.com/file.zip"
+    },
+    {
+      "term": "systemctl",
+      "definition": "Controls and manages services and other units on systems using systemd. Common actions include start, stop, restart, enable (start at boot) and status, and it is the main tool for managing services on modern Linux.",
+      "example": "systemctl status ssh"
+    },
+    {
+      "term": "journalctl",
+      "definition": "Displays and searches logs collected by the systemd journal. It can filter by service, time or priority, for example with -u, --since and -p, and -f follows new log entries live.",
+      "example": "journalctl -u ssh"
+    },
+    {
+      "term": "tree",
+      "definition": "Displays directories and files in a tree-like hierarchical structure. It gives a quick visual overview of a folder's layout and can limit depth with -L.",
+      "example": "tree -L 2 /home/yasir"
+    },
+    {
+      "term": "stat",
+      "definition": "Displays detailed information about a file or filesystem, including size, permissions, owner and access, modify and change times. It is useful in investigations to check timestamps.",
+      "example": "stat notes.txt"
+    },
+    {
+      "term": "file",
+      "definition": "Determines the type of a file by examining its contents instead of relying on the extension. It helps identify disguised or unknown files.",
+      "example": "file suspicious.pdf"
+    },
+    {
+      "term": "ln",
+      "definition": "Creates links between files. By default it makes hard links, and with -s it creates symbolic (soft) links that point to another path.",
+      "example": "ln -s /var/log/syslog mylog"
+    },
+    {
+      "term": "basename",
+      "definition": "Removes the directory part from a path and prints only the file name. It is commonly used in shell scripts.",
+      "example": "basename /home/yasir/notes.txt"
+    },
+    {
+      "term": "dirname",
+      "definition": "Removes the file name from a path and prints only the directory portion. It is the counterpart of basename.",
+      "example": "dirname /home/yasir/notes.txt"
+    },
+    {
+      "term": "realpath",
+      "definition": "Prints the absolute, resolved path of a file, following symbolic links. It helps determine where a link really points.",
+      "example": "realpath ../notes.txt"
+    },
+    {
+      "term": "shred",
+      "definition": "Overwrites a file multiple times to make recovery difficult and can optionally delete it. It is used for secure deletion on suitable filesystems.",
+      "example": "shred -u secret.txt"
+    },
+    {
+      "term": "dd",
+      "definition": "Copies and converts data at the block level from one source to another. It is used for creating disk images and bootable USB drives, and a wrong target can destroy data.",
+      "example": "sudo dd if=/dev/sda of=disk.img bs=4M"
+    },
+    {
+      "term": "wc",
+      "definition": "Counts lines, words and bytes in a file or input. Options like -l count only lines.",
+      "example": "wc -l access.log"
+    },
+    {
+      "term": "sort",
+      "definition": "Sorts lines of text in alphabetical or numerical order. It is often combined with uniq to analyze logs.",
+      "example": "sort -n numbers.txt"
+    },
+    {
+      "term": "uniq",
+      "definition": "Filters out repeated adjacent lines and, with -c, counts how many times each line appears. The input usually needs to be sorted first.",
+      "example": "sort ips.txt | uniq -c"
+    },
+    {
+      "term": "cut",
+      "definition": "Extracts selected columns or characters from each line of input. It is useful for processing delimited data.",
+      "example": "cut -d: -f1 /etc/passwd"
+    },
+    {
+      "term": "tr",
+      "definition": "Translates, deletes or squeezes characters from standard input. It is often used to change case or remove unwanted characters.",
+      "example": "echo hello | tr a-z A-Z"
+    },
+    {
+      "term": "sed",
+      "definition": "A stream editor that searches and transforms text using patterns, most commonly for find-and-replace operations. It can edit files in place with -i.",
+      "example": "sed 's/error/ERROR/g' system.log"
+    },
+    {
+      "term": "awk",
+      "definition": "A powerful text-processing language that works on fields in each line. It is widely used for reports and extracting data from logs.",
+      "example": "awk '{print $1}' access.log"
+    },
+    {
+      "term": "diff",
+      "definition": "Compares two files line by line and shows the differences. It is used to review changes between versions of files.",
+      "example": "diff old.conf new.conf"
+    },
+    {
+      "term": "tee",
+      "definition": "Reads standard input and writes it to both the screen and a file at the same time. With -a it appends instead of overwriting.",
+      "example": "ls -l | tee list.txt"
+    },
+    {
+      "term": "xargs",
+      "definition": "Builds and runs commands using items read from standard input. It is useful for applying a command to many results, such as those from find.",
+      "example": "find . -name '*.tmp' | xargs rm"
+    },
+    {
+      "term": "echo",
+      "definition": "Prints text or variable values to the terminal. It is commonly used in scripts and to write text to files with redirection.",
+      "example": "echo \"Hello Linux\""
+    },
+    {
+      "term": "printf",
+      "definition": "Prints formatted text, similar to the C function, giving more control than echo over how output looks.",
+      "example": "printf \"%s has %d files\\n\" docs 5"
+    },
+    {
+      "term": "more",
+      "definition": "Displays file contents one screen at a time, moving forward only. It is a simpler predecessor of less.",
+      "example": "more readme.txt"
+    },
+    {
+      "term": "hexdump",
+      "definition": "Displays the contents of a file in hexadecimal and ASCII form. It is used in forensics and debugging to inspect binary data.",
+      "example": "hexdump -C file.bin"
+    },
+    {
+      "term": "xxd",
+      "definition": "Creates a hex dump of a file and can also convert a hex dump back into binary. It is handy for inspecting and patching binary data.",
+      "example": "xxd file.bin | head"
+    },
+    {
+      "term": "strings",
+      "definition": "Extracts printable text strings from binary files. Analysts use it to find hints such as URLs or messages inside programs.",
+      "example": "strings malware.bin"
+    },
+    {
+      "term": "man",
+      "definition": "Displays the manual page for a command, including its syntax, options and examples. It is the main built-in documentation system.",
+      "example": "man grep"
+    },
+    {
+      "term": "info",
+      "definition": "Displays documentation in the GNU Info format, which is often more detailed than manual pages. It supports navigation through linked nodes.",
+      "example": "info coreutils"
+    },
+    {
+      "term": "whatis",
+      "definition": "Shows a one-line description of a command from the manual page database. It is a quick way to remember what a command does.",
+      "example": "whatis ls"
+    },
+    {
+      "term": "apropos",
+      "definition": "Searches manual page descriptions for a keyword. It helps find commands when you know the task but not the command name.",
+      "example": "apropos network"
+    },
+    {
+      "term": "type",
+      "definition": "Shows how a command name will be interpreted by the shell, such as an alias, built-in or file. It helps resolve naming conflicts.",
+      "example": "type cd"
+    },
+    {
+      "term": "updatedb",
+      "definition": "Updates the database used by locate by scanning the filesystem. It is usually run automatically but can be run manually with sudo.",
+      "example": "sudo updatedb"
+    },
+    {
+      "term": "tar",
+      "definition": "Combines many files into a single archive and can compress or extract archives. Common options include -c to create, -x to extract, -z for gzip and -f for the file name.",
+      "example": "tar -czf backup.tar.gz documents/"
+    },
+    {
+      "term": "gzip",
+      "definition": "Compresses files using the DEFLATE algorithm and typically adds a .gz extension. It replaces the original file by default.",
+      "example": "gzip logfile.txt"
+    },
+    {
+      "term": "gunzip",
+      "definition": "Decompresses files that were compressed with gzip. It restores the original file and removes the .gz version by default.",
+      "example": "gunzip logfile.txt.gz"
+    },
+    {
+      "term": "bzip2",
+      "definition": "Compresses files using the Burrows-Wheeler algorithm, usually achieving better compression than gzip but more slowly. It produces .bz2 files.",
+      "example": "bzip2 data.csv"
+    },
+    {
+      "term": "xz",
+      "definition": "Compresses files with the LZMA algorithm and provides very high compression ratios. It is commonly used for software packages.",
+      "example": "xz archive.tar"
+    },
+    {
+      "term": "zip",
+      "definition": "Packages and compresses files into a .zip archive that is compatible with many operating systems. The -r option includes directories.",
+      "example": "zip -r project.zip project/"
+    },
+    {
+      "term": "unzip",
+      "definition": "Extracts files from a .zip archive. It can also list the archive contents with -l.",
+      "example": "unzip project.zip"
+    },
+    {
+      "term": "setfacl",
+      "definition": "Sets Access Control Lists on files, which give permissions to specific users or groups beyond the standard owner, group and others. It allows finer control.",
+      "example": "setfacl -m u:ali:rw report.txt"
+    },
+    {
+      "term": "getfacl",
+      "definition": "Displays the Access Control List of a file or directory, including extra user and group permissions. It is used to audit detailed access.",
+      "example": "getfacl report.txt"
+    },
+    {
+      "term": "chattr",
+      "definition": "Changes special attributes of files on supported filesystems, such as making a file immutable with +i so it cannot be modified or deleted.",
+      "example": "sudo chattr +i important.conf"
+    },
+    {
+      "term": "lsattr",
+      "definition": "Lists the special attributes of files, such as the immutable flag. It is used to check protections set with chattr.",
+      "example": "lsattr important.conf"
+    },
+    {
+      "term": "visudo",
+      "definition": "Safely edits the sudoers file by locking it and checking syntax before saving. This prevents mistakes that could lock out administrative access.",
+      "example": "sudo visudo"
+    },
+    {
+      "term": "gpasswd",
+      "definition": "Administers groups by adding or removing members and setting group administrators. It is an alternative way to manage group membership.",
+      "example": "sudo gpasswd -a ali students"
+    },
+    {
+      "term": "chage",
+      "definition": "Changes or displays user password aging information, such as expiry dates and warning periods. It supports password policy enforcement.",
+      "example": "sudo chage -l ali"
+    },
+    {
+      "term": "last",
+      "definition": "Shows a history of user logins and logouts by reading the system login records. It helps administrators review who accessed the system and when.",
+      "example": "last -n 10"
+    },
+    {
+      "term": "lastb",
+      "definition": "Displays failed login attempts recorded in the system. It requires administrator privileges and is useful for spotting brute-force attempts.",
+      "example": "sudo lastb"
+    },
+    {
+      "term": "lastlog",
+      "definition": "Shows the most recent login time of every user account. It helps detect unused or suspicious accounts.",
+      "example": "lastlog"
+    },
+    {
+      "term": "adduser",
+      "definition": "A friendly script for creating users that asks for details and sets up the home directory automatically. It is common on Debian-based systems.",
+      "example": "sudo adduser ali"
+    },
+    {
+      "term": "deluser",
+      "definition": "A friendly command for removing user accounts on Debian-based systems. It can also remove home directories with an option.",
+      "example": "sudo deluser --remove-home ali"
+    },
+    {
+      "term": "groupdel",
+      "definition": "Deletes an existing group from the system. A group that is the primary group of a user cannot be removed.",
+      "example": "sudo groupdel students"
+    },
+    {
+      "term": "groupmod",
+      "definition": "Modifies the properties of an existing group, such as its name or group ID.",
+      "example": "sudo groupmod -n learners students"
+    },
+    {
+      "term": "chsh",
+      "definition": "Changes a user's login shell, such as from bash to zsh. The new shell must be listed in /etc/shells.",
+      "example": "chsh -s /bin/zsh"
+    },
+    {
+      "term": "newgrp",
+      "definition": "Starts a new shell session with a different primary group. It lets a user work temporarily with another group's permissions.",
+      "example": "newgrp developers"
+    },
+    {
+      "term": "pstree",
+      "definition": "Displays running processes as a tree showing parent and child relationships. It helps understand how processes are launched.",
+      "example": "pstree -p"
+    },
+    {
+      "term": "pgrep",
+      "definition": "Searches for processes by name or other attributes and prints their process IDs. It avoids having to filter ps output with grep.",
+      "example": "pgrep firefox"
+    },
+    {
+      "term": "pkill",
+      "definition": "Sends a signal to processes selected by name or other criteria. It is similar to killall but uses pattern matching.",
+      "example": "pkill -f python"
+    },
+    {
+      "term": "nice",
+      "definition": "Starts a command with a chosen priority, called niceness. Higher values make the process less greedy for the CPU.",
+      "example": "nice -n 10 ./backup.sh"
+    },
+    {
+      "term": "renice",
+      "definition": "Changes the priority of a process that is already running. Only root can lower a process's niceness value.",
+      "example": "sudo renice -n 5 -p 1234"
+    },
+    {
+      "term": "nohup",
+      "definition": "Runs a command so that it keeps running after the terminal is closed or the user logs out. Output goes to nohup.out by default.",
+      "example": "nohup ./script.sh &"
+    },
+    {
+      "term": "bg",
+      "definition": "Resumes a suspended job in the background so the terminal can be used for other commands.",
+      "example": "bg %1"
+    },
+    {
+      "term": "fg",
+      "definition": "Brings a background or stopped job to the foreground so it can interact with the terminal.",
+      "example": "fg %1"
+    },
+    {
+      "term": "jobs",
+      "definition": "Lists the jobs started from the current shell session along with their status.",
+      "example": "jobs"
+    },
+    {
+      "term": "htop",
+      "definition": "An interactive process viewer that is more user-friendly than top, with colors, scrolling and mouse support. It may need to be installed first.",
+      "example": "htop"
+    },
+    {
+      "term": "watch",
+      "definition": "Runs a command repeatedly at fixed intervals and displays its output full-screen. It is useful for monitoring changes.",
+      "example": "watch -n 2 df -h"
+    },
+    {
+      "term": "lsof",
+      "definition": "Lists open files and the processes that use them, including network connections. It helps find which program is using a file or port.",
+      "example": "sudo lsof -i :80"
+    },
+    {
+      "term": "strace",
+      "definition": "Traces the system calls and signals made by a program while it runs. It is used for debugging and for analyzing suspicious software behavior.",
+      "example": "strace -f ls"
+    },
+    {
+      "term": "vmstat",
+      "definition": "Reports statistics about processes, memory, swap, input/output and CPU activity. It gives a quick system performance overview.",
+      "example": "vmstat 2 5"
+    },
+    {
+      "term": "iostat",
+      "definition": "Reports CPU statistics and input/output activity of disks. It helps identify storage bottlenecks.",
+      "example": "iostat -x 2"
+    },
+    {
+      "term": "uptime",
+      "definition": "Shows how long the system has been running, the number of logged-in users and the load averages for 1, 5 and 15 minutes.",
+      "example": "uptime"
+    },
+    {
+      "term": "dmesg",
+      "definition": "Displays messages from the kernel ring buffer, including hardware detection and driver messages. It is useful for diagnosing boot and device problems.",
+      "example": "dmesg | tail"
+    },
+    {
+      "term": "time",
+      "definition": "Measures how long a command takes to run and reports real, user and system time.",
+      "example": "time ls -R /"
+    },
+    {
+      "term": "timeout",
+      "definition": "Runs a command and stops it automatically if it takes longer than the given time. It prevents scripts from hanging.",
+      "example": "timeout 10 ping google.com"
+    },
+    {
+      "term": "sleep",
+      "definition": "Pauses execution for a specified amount of time. It is often used in scripts to add delays.",
+      "example": "sleep 5"
+    },
+    {
+      "term": "crontab",
+      "definition": "Edits the table of scheduled tasks for a user. Cron runs the listed commands automatically at set times.",
+      "example": "crontab -e"
+    },
+    {
+      "term": "tmux",
+      "definition": "A terminal multiplexer that lets you run multiple terminal sessions inside one window and detach from them while they continue running. It is popular for remote work.",
+      "example": "tmux new -s work"
+    },
+    {
+      "term": "lscpu",
+      "definition": "Displays information about the CPU architecture, such as the number of cores, model and speed.",
+      "example": "lscpu"
+    },
+    {
+      "term": "lsblk",
+      "definition": "Lists block devices such as disks and partitions in a tree format. It helps to see how storage is organized.",
+      "example": "lsblk"
+    },
+    {
+      "term": "lsusb",
+      "definition": "Lists USB devices connected to the system. It helps identify plugged-in hardware.",
+      "example": "lsusb"
+    },
+    {
+      "term": "lspci",
+      "definition": "Lists PCI devices such as graphics cards and network adapters. It is useful when checking hardware and drivers.",
+      "example": "lspci"
+    },
+    {
+      "term": "lshw",
+      "definition": "Provides detailed information about the system hardware configuration, including memory, CPU and disks. It typically needs sudo for complete output.",
+      "example": "sudo lshw -short"
+    },
+    {
+      "term": "dmidecode",
+      "definition": "Reads hardware information from the system's BIOS tables, such as manufacturer, serial numbers and memory slots. It requires root privileges.",
+      "example": "sudo dmidecode -t memory"
+    },
+    {
+      "term": "mount",
+      "definition": "Attaches a filesystem or device to a directory so its files can be accessed. Without arguments it lists the currently mounted filesystems.",
+      "example": "sudo mount /dev/sdb1 /mnt"
+    },
+    {
+      "term": "umount",
+      "definition": "Detaches a mounted filesystem so it can be safely removed or checked. The device must not be in use.",
+      "example": "sudo umount /mnt"
+    },
+    {
+      "term": "fdisk",
+      "definition": "A tool for viewing and managing disk partition tables. Incorrect use can cause data loss, so it must be used carefully.",
+      "example": "sudo fdisk -l"
+    },
+    {
+      "term": "mkfs",
+      "definition": "Creates a filesystem on a partition, which erases existing data on it. Variants such as mkfs.ext4 select the type.",
+      "example": "sudo mkfs.ext4 /dev/sdb1"
+    },
+    {
+      "term": "fsck",
+      "definition": "Checks and repairs filesystem errors. It should be run on unmounted filesystems to avoid damage.",
+      "example": "sudo fsck /dev/sdb1"
+    },
+    {
+      "term": "blkid",
+      "definition": "Displays the attributes of block devices, such as UUIDs and filesystem types. UUIDs are often used in the fstab file.",
+      "example": "sudo blkid"
+    },
+    {
+      "term": "swapon",
+      "definition": "Enables a swap partition or file so it can be used as virtual memory. With -s it shows swap usage.",
+      "example": "sudo swapon --show"
+    },
+    {
+      "term": "sync",
+      "definition": "Forces cached data in memory to be written to disk. It helps prevent data loss before removing storage devices.",
+      "example": "sync"
+    },
+    {
+      "term": "reboot",
+      "definition": "Restarts the system. It normally requires administrative privileges.",
+      "example": "sudo reboot"
+    },
+    {
+      "term": "shutdown",
+      "definition": "Safely powers off or restarts the system after notifying users, and it can be scheduled for a later time.",
+      "example": "sudo shutdown -h +10"
+    },
+    {
+      "term": "poweroff",
+      "definition": "Shuts down the system and turns off the power. It is a quick equivalent to a shutdown command.",
+      "example": "sudo poweroff"
+    },
+    {
+      "term": "date",
+      "definition": "Displays or sets the system date and time. A custom format can be given with a plus sign.",
+      "example": "date +\"%Y-%m-%d\""
+    },
+    {
+      "term": "timedatectl",
+      "definition": "Shows and changes the system clock, time zone and time synchronization settings on systemd systems.",
+      "example": "timedatectl status"
+    },
+    {
+      "term": "hostnamectl",
+      "definition": "Displays or changes the system hostname and related details like the operating system and kernel on systemd systems.",
+      "example": "hostnamectl"
+    },
+    {
+      "term": "env",
+      "definition": "Prints the current environment variables or runs a command in a modified environment.",
+      "example": "env"
+    },
+    {
+      "term": "export",
+      "definition": "Marks a shell variable so it is passed to child processes as an environment variable.",
+      "example": "export PATH=$PATH:/opt/tools"
+    },
+    {
+      "term": "alias",
+      "definition": "Creates a shortcut name for a longer command. Aliases last for the session unless saved in a shell startup file.",
+      "example": "alias ll='ls -la'"
+    },
+    {
+      "term": "history",
+      "definition": "Displays the list of previously executed commands in the shell. It helps repeat commands and review activity.",
+      "example": "history | tail -n 20"
+    },
+    {
+      "term": "source",
+      "definition": "Reads and executes commands from a file in the current shell, so changes such as variables apply immediately.",
+      "example": "source ~/.bashrc"
+    },
+    {
+      "term": "clear",
+      "definition": "Clears the terminal screen to give a clean view. It does not delete command history.",
+      "example": "clear"
+    },
+    {
+      "term": "ulimit",
+      "definition": "Shows or sets resource limits for the current shell and its processes, such as the maximum number of open files.",
+      "example": "ulimit -n"
+    },
+    {
+      "term": "ip",
+      "definition": "A modern, powerful command to display and manage network interfaces, addresses and routes. It replaces older tools such as ifconfig and route.",
+      "example": "ip addr show"
+    },
+    {
+      "term": "ss",
+      "definition": "Displays socket statistics, showing open TCP and UDP connections and listening ports. It is a faster, modern replacement for netstat.",
+      "example": "ss -tuln"
+    },
+    {
+      "term": "ifconfig",
+      "definition": "An older command that displays and configures network interfaces. It is deprecated on many systems in favor of the ip command.",
+      "example": "ifconfig eth0"
+    },
+    {
+      "term": "netstat",
+      "definition": "Displays network connections, routing tables and interface statistics. It is older than ss but still widely known.",
+      "example": "netstat -tulnp"
+    },
+    {
+      "term": "nslookup",
+      "definition": "Queries DNS servers to find the IP address of a domain or the domain of an IP address. It is used for DNS troubleshooting.",
+      "example": "nslookup example.com"
+    },
+    {
+      "term": "dig",
+      "definition": "A flexible DNS lookup tool that shows detailed answers from DNS servers, including record types and response times.",
+      "example": "dig example.com MX"
+    },
+    {
+      "term": "host",
+      "definition": "A simple utility for DNS lookups that converts names to IP addresses and the reverse.",
+      "example": "host example.com"
+    },
+    {
+      "term": "route",
+      "definition": "Displays or modifies the kernel routing table. It is considered legacy and is replaced by ip route.",
+      "example": "route -n"
+    },
+    {
+      "term": "tcpdump",
+      "definition": "A command-line packet analyzer that captures and displays network traffic. It is used for troubleshooting and security monitoring.",
+      "example": "sudo tcpdump -i eth0 port 80"
+    },
+    {
+      "term": "nc",
+      "definition": "Netcat is a versatile networking tool that reads and writes data across TCP or UDP connections. It is used for testing ports and transferring data.",
+      "example": "nc -zv 192.168.1.1 22"
+    },
+    {
+      "term": "iptables",
+      "definition": "The traditional Linux firewall tool that configures packet filtering rules in the kernel. Rules are organized into chains such as INPUT and OUTPUT.",
+      "example": "sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT"
+    },
+    {
+      "term": "ufw",
+      "definition": "Uncomplicated Firewall is a simple front end for managing firewall rules, designed to be easy for beginners.",
+      "example": "sudo ufw allow 22/tcp"
+    },
+    {
+      "term": "sshd",
+      "definition": "The SSH server daemon that listens for incoming SSH connections and handles authentication. Its settings are in /etc/ssh/sshd_config.",
+      "example": "sudo systemctl restart sshd"
+    },
+    {
+      "term": "ssh-agent",
+      "definition": "A program that holds your decrypted private SSH keys in memory so you do not need to type the passphrase repeatedly.",
+      "example": "eval $(ssh-agent)"
+    },
+    {
+      "term": "ssh-keygen",
+      "definition": "Generates, manages and converts SSH authentication key pairs. Key-based login is more secure than passwords.",
+      "example": "ssh-keygen -t ed25519"
+    },
+    {
+      "term": "ssh-copy-id",
+      "definition": "Installs your public SSH key on a remote server so you can log in without a password.",
+      "example": "ssh-copy-id user@192.168.1.10"
+    },
+    {
+      "term": "scp",
+      "definition": "Securely copies files between computers over SSH. It encrypts both the data and the login credentials.",
+      "example": "scp report.pdf user@192.168.1.10:/home/user/"
+    },
+    {
+      "term": "rsync",
+      "definition": "Efficiently synchronizes files and directories by copying only the differences. It works locally or over SSH and is widely used for backups.",
+      "example": "rsync -avz documents/ user@server:/backup/"
+    },
+    {
+      "term": "whois",
+      "definition": "Queries public databases for registration information about a domain name or IP address, such as the registrar and contact details.",
+      "example": "whois example.com"
+    },
+    {
+      "term": "mtr",
+      "definition": "Combines the features of ping and traceroute in one tool that continuously shows the path and quality of a connection.",
+      "example": "mtr google.com"
+    },
+    {
+      "term": "nmcli",
+      "definition": "A command-line client for NetworkManager that manages network connections and Wi-Fi.",
+      "example": "nmcli device wifi list"
+    },
+    {
+      "term": "ethtool",
+      "definition": "Displays and changes settings of Ethernet network cards, such as speed, duplex mode and link status.",
+      "example": "sudo ethtool eth0"
+    },
+    {
+      "term": "tracepath",
+      "definition": "Traces the path to a destination and discovers the MTU along the way without needing root privileges.",
+      "example": "tracepath google.com"
+    },
+    {
+      "term": "openssl",
+      "definition": "A toolkit for working with SSL/TLS, certificates, encryption, hashing and key generation. It is widely used in security tasks.",
+      "example": "openssl rand -hex 16"
+    },
+    {
+      "term": "gpg",
+      "definition": "GNU Privacy Guard encrypts, decrypts and digitally signs files and messages using public-key cryptography.",
+      "example": "gpg --encrypt --recipient ali file.txt"
+    },
+    {
+      "term": "sha256sum",
+      "definition": "Computes or verifies SHA-256 checksums of files. It is used to confirm that a file has not been changed or corrupted.",
+      "example": "sha256sum ubuntu.iso"
+    },
+    {
+      "term": "md5sum",
+      "definition": "Computes or checks MD5 checksums of files. It is fast but no longer secure against deliberate tampering, so it suits only basic integrity checks.",
+      "example": "md5sum file.zip"
+    },
+    {
+      "term": "base64",
+      "definition": "Encodes data into Base64 text or decodes it back. It is used to represent binary data in text form and is not encryption.",
+      "example": "echo hello | base64"
+    },
+    {
+      "term": "apt",
+      "definition": "A package management command on Debian and Ubuntu that installs, updates and removes software from repositories.",
+      "example": "sudo apt install nmap"
+    },
+    {
+      "term": "dpkg",
+      "definition": "The low-level package manager for Debian-based systems that installs and queries individual .deb packages.",
+      "example": "dpkg -l"
+    },
+    {
+      "term": "dnf",
+      "definition": "The package manager used on Fedora and newer Red Hat-based systems to install and update software.",
+      "example": "sudo dnf install httpd"
+    },
+    {
+      "term": "rpm",
+      "definition": "The package manager for RPM-based distributions that installs, queries and verifies .rpm packages.",
+      "example": "rpm -qa"
+    },
+    {
+      "term": "service",
+      "definition": "A legacy command to start, stop and check the status of services. On modern systems it often forwards to systemctl.",
+      "example": "sudo service ssh status"
+    },
+    {
+      "term": "modprobe",
+      "definition": "Adds or removes kernel modules while automatically handling their dependencies.",
+      "example": "sudo modprobe usb_storage"
+    },
+    {
+      "term": "lsmod",
+      "definition": "Lists the kernel modules currently loaded into the system. It helps check which drivers are active.",
+      "example": "lsmod"
+    },
+    {
+      "term": "sysctl",
+      "definition": "Reads and changes kernel parameters at runtime, such as network and security settings.",
+      "example": "sysctl net.ipv4.ip_forward"
+    },
+    {
+      "term": "chkrootkit",
+      "definition": "A security tool that scans the system for signs of known rootkits. It is used for basic detection and should be run from a trusted environment.",
+      "example": "sudo chkrootkit"
+    },
+    {
+      "term": "rkhunter",
+      "definition": "Rootkit Hunter scans for rootkits, backdoors and suspicious file changes. It compares system files with known good values.",
+      "example": "sudo rkhunter --check"
+    },
+    {
+      "term": "lynis",
+      "definition": "An open-source security auditing tool that scans a Linux system and gives hardening suggestions.",
+      "example": "sudo lynis audit system"
+    },
+    {
+      "term": "clamscan",
+      "definition": "The command-line scanner of the ClamAV antivirus. It checks files and directories for malware.",
+      "example": "clamscan -r /home"
+    },
+    {
+      "term": "fail2ban-client",
+      "definition": "Controls the Fail2ban service, which blocks IP addresses that show malicious behavior such as repeated failed logins.",
+      "example": "sudo fail2ban-client status sshd"
+    },
+    {
+      "term": "auditctl",
+      "definition": "Controls the Linux Audit system, allowing you to define rules that log security-relevant events like file access.",
+      "example": "sudo auditctl -w /etc/passwd -p wa"
+    },
+    {
+      "term": "getenforce",
+      "definition": "Displays the current SELinux mode, which can be Enforcing, Permissive or Disabled.",
+      "example": "getenforce"
+    },
+    {
+      "term": "sestatus",
+      "definition": "Shows detailed SELinux status, including the mode and loaded policy.",
+      "example": "sestatus"
+    },
+    {
+      "term": "aa-status",
+      "definition": "Displays the status of AppArmor profiles that restrict what programs are allowed to do.",
+      "example": "sudo aa-status"
+    },
+    {
+      "term": "logrotate",
+      "definition": "Manages log files by rotating, compressing and deleting old logs automatically. It prevents logs from filling the disk.",
+      "example": "sudo logrotate /etc/logrotate.conf"
+    },
+    {
+      "term": "logger",
+      "definition": "Adds a message to the system log from the command line or scripts. It is useful for recording events.",
+      "example": "logger \"Backup completed\""
+    }
+  ],
+  "Cyber Threats": [
+    {
+      "term": "Phishing",
+      "definition": "A social engineering attack in which attackers trick users into revealing sensitive information through deceptive messages or websites. Attackers often copy the logos and wording of trusted organizations and create a sense of urgency, and the stolen details are then used for fraud or further attacks.",
+      "example": "A fake bank email asking a user to verify their account through a malicious link."
+    },
+    {
+      "term": "Spear Phishing",
+      "definition": "A targeted phishing attack designed for a specific individual or organization. Because the message uses personal details gathered from social media or earlier breaches, it appears far more believable than mass phishing and has a higher success rate.",
+      "example": "An attacker sends a fake email using an employee's name and workplace details to steal login credentials."
+    },
+    {
+      "term": "Whaling",
+      "definition": "A phishing attack specifically targeting high-level executives or important individuals. These messages are carefully written to look like legal, financial or board-level communication, since the victim has the authority to approve payments or access sensitive data.",
+      "example": "A fake financial approval request sent to a company's CEO."
+    },
+    {
+      "term": "Smishing",
+      "definition": "A phishing attack conducted through SMS text messages. Short messages and shortened links make it hard to spot the deception on a phone, and the messages often claim to be about deliveries, banking alerts or prizes.",
+      "example": "A fake delivery message asking someone to click a link and pay a small fee."
+    },
+    {
+      "term": "Vishing",
+      "definition": "A social engineering attack that uses voice calls to trick victims into sharing sensitive information. Callers may spoof the phone number and use pressure or fear to rush the victim, so banks advise never sharing PINs or one-time passwords over a call.",
+      "example": "Someone pretending to be a bank employee and requesting an OTP over the phone."
+    },
+    {
+      "term": "Ransomware",
+      "definition": "Malicious software that encrypts a victim's files or systems and demands payment for their recovery. Attackers often threaten to leak the stolen data as well, so organizations rely on offline backups, patching and user awareness to reduce the impact.",
+      "example": "WannaCry infected computers and encrypted their files."
+    },
+    {
+      "term": "Spyware",
+      "definition": "Malicious software that secretly monitors user activities and collects information. It can capture passwords, messages, location and browsing habits, and it often arrives bundled with free software or through malicious links.",
+      "example": "A program secretly recording browsing activity and sending it to an attacker."
+    },
+    {
+      "term": "Adware",
+      "definition": "Software that displays unwanted advertisements and may track user activity. While some adware is only annoying, aggressive versions can slow the device, change browser settings and expose users to malicious websites.",
+      "example": "A suspicious application displaying continuous pop-up advertisements."
+    },
+    {
+      "term": "Trojan Horse",
+      "definition": "Malware that disguises itself as legitimate software to trick users into installing it. Unlike viruses, trojans do not replicate by themselves; they rely on tricking the user, and once installed they may steal data, open a backdoor or download more malware.",
+      "example": "A fake software installer that secretly installs malicious code."
+    },
+    {
+      "term": "Worm",
+      "definition": "Malware that independently replicates and spreads across systems or networks. Worms need no user action or host file, so they can spread extremely fast, consume bandwidth and carry harmful payloads such as ransomware.",
+      "example": "A network worm exploiting vulnerable computers to spread automatically."
+    },
+    {
+      "term": "Virus",
+      "definition": "Malicious code that attaches itself to legitimate files or programs and spreads when they are executed. A virus needs a host file and some user action to spread, and it may corrupt data, slow the system or deliver other malicious functions.",
+      "example": "An infected document that spreads malicious code when opened."
+    },
+    {
+      "term": "Rootkit",
+      "definition": "Malicious software designed to hide its presence and maintain privileged access to a compromised system. Because it can modify the operating system or boot process, a rootkit is very hard to detect and remove, and a full reinstall is sometimes necessary.",
+      "example": "A rootkit hiding malicious processes and files from system monitoring tools."
+    },
+    {
+      "term": "Keylogger",
+      "definition": "A malicious program or device that records keystrokes to capture sensitive information. Keyloggers can be software installed on the system or small hardware devices attached to a keyboard, and they let attackers collect passwords and card numbers silently.",
+      "example": "A keylogger recording usernames and passwords typed by a victim."
+    },
+    {
+      "term": "Botnet",
+      "definition": "A network of compromised devices remotely controlled by an attacker. Botnets are used for DDoS attacks, spam campaigns, credential theft and cryptocurrency mining, and the owners of infected devices are usually unaware.",
+      "example": "Thousands of infected computers being controlled to launch a DDoS attack."
+    },
+    {
+      "term": "Backdoor",
+      "definition": "A hidden method of bypassing normal authentication or security controls to gain access to a system. Backdoors can be planted by malware or intentionally left by developers, and attackers use them to return to a system later without detection.",
+      "example": "Malware creating a secret remote access mechanism on a compromised computer."
+    },
+    {
+      "term": "Logic Bomb",
+      "definition": "Malicious code designed to activate when a specific condition or event occurs. It stays dormant until a trigger such as a date or the deletion of an account occurs, and it is often associated with malicious insiders.",
+      "example": "A program that deletes company files when a particular employee account is removed."
+    },
+    {
+      "term": "Cryptojacking",
+      "definition": "The unauthorized use of another person's computing resources to mine cryptocurrency. Victims usually notice slow performance, overheating devices and higher electricity bills, while the attacker profits from the stolen computing power.",
+      "example": "A compromised website secretly using visitors' CPU resources for cryptocurrency mining."
+    },
+    {
+      "term": "Fileless Malware",
+      "definition": "Malware that operates primarily in memory or uses legitimate system tools instead of relying on traditional malicious files. Because it leaves very few files on disk, it can bypass traditional antivirus tools and requires behavior-based monitoring to detect.",
+      "example": "An attacker abusing PowerShell to execute malicious commands in memory."
+    },
+    {
+      "term": "Root Access Exploitation",
+      "definition": "An attack that obtains the highest administrative privileges on a Linux or Unix-like system. Once root is obtained, the attacker can read or change any file, create accounts and hide traces, so it usually results in a complete system compromise.",
+      "example": "Exploiting a vulnerable service to gain root privileges."
+    },
+    {
+      "term": "Privilege Escalation",
+      "definition": "An attack technique in which an attacker gains higher permissions than originally authorized. It can be vertical (gaining admin rights) or horizontal (accessing another user's data) and often happens after an attacker has gained a low-level foothold.",
+      "example": "A normal user exploiting a vulnerability to obtain administrator privileges."
+    },
+    {
+      "term": "Brute Force Attack",
+      "definition": "An attack that attempts many possible password combinations until the correct one is found. The time needed grows quickly with password length and complexity, so long passwords, account lockout and multi-factor authentication make this attack impractical.",
+      "example": "Repeatedly guessing passwords to gain access to an account."
+    },
+    {
+      "term": "Dictionary Attack",
+      "definition": "A password attack that tries words and commonly used passwords from a predefined list. It is much faster than trying every combination because many people choose predictable passwords, which is why unique and unusual passphrases are recommended.",
+      "example": "Attempting passwords such as password123 and qwerty."
+    },
+    {
+      "term": "Credential Stuffing",
+      "definition": "An attack that uses stolen username and password combinations to access other accounts. It succeeds because many people reuse the same password on several websites, so using a unique password for each account and enabling MFA greatly reduces the risk.",
+      "example": "Using credentials leaked from one website to access a victim's email account."
+    },
+    {
+      "term": "Password Spraying",
+      "definition": "An attack that tries a small number of common passwords against many user accounts. Spreading attempts across many accounts helps the attacker avoid account lockouts, so monitoring for failed logins across many users is an important defense.",
+      "example": "Trying the same weak password against hundreds of employee accounts."
+    },
+    {
+      "term": "Man-in-the-Middle Attack",
+      "definition": "An attack in which an attacker intercepts or potentially modifies communication between two parties. The attacker may secretly read or alter messages while both parties believe they are talking directly, and encryption with certificate checks helps prevent it.",
+      "example": "An attacker intercepting unencrypted communication between a user and a website."
+    },
+    {
+      "term": "Denial of Service (DoS)",
+      "definition": "An attack that makes a system or service unavailable by overwhelming or disrupting its resources. The goal is to disrupt availability rather than steal data, and it can cause lost revenue and damage to an organization's reputation.",
+      "example": "Flooding a website with excessive requests until it stops responding."
+    },
+    {
+      "term": "Distributed Denial of Service (DDoS)",
+      "definition": "A denial-of-service attack launched from multiple devices or systems against a target. Because the traffic comes from thousands of sources, it is hard to block, and defenses include traffic filtering, rate limiting and DDoS protection services.",
+      "example": "A botnet sending massive amounts of traffic to a company's website."
+    },
+    {
+      "term": "SQL Injection",
+      "definition": "An attack in which malicious SQL input manipulates database queries due to insufficient input handling. It can allow attackers to read, change or delete database data, and it is prevented by using parameterized queries and validating user input.",
+      "example": "An attacker exploiting a vulnerable login form to bypass authentication."
+    },
+    {
+      "term": "Cross-Site Scripting (XSS)",
+      "definition": "An attack in which malicious scripts are injected into web pages and executed in other users' browsers. The script can steal session cookies, redirect users or change page content, and it is prevented by validating input and encoding output.",
+      "example": "A vulnerable comment section displaying an attacker's injected JavaScript."
+    },
+    {
+      "term": "Cross-Site Request Forgery (CSRF)",
+      "definition": "An attack that tricks an authenticated user's browser into performing an unwanted action on a website. It works because the browser automatically sends the user's cookies, and it is prevented with anti-CSRF tokens and same-site cookie settings.",
+      "example": "A victim unknowingly submitting a bank transfer request through a malicious webpage."
+    },
+    {
+      "term": "DNS Spoofing",
+      "definition": "An attack that provides false DNS information to redirect users to incorrect or malicious destinations. Because the victim sees a normal-looking address, they may enter passwords on a fake site, and DNSSEC and secure resolvers reduce this risk.",
+      "example": "Redirecting a user from a legitimate banking domain to a fake website."
+    },
+    {
+      "term": "ARP Spoofing",
+      "definition": "An attack in which forged ARP messages associate an attacker's MAC address with another device's IP address. This lets the attacker intercept or modify traffic on the local network, and defenses include dynamic ARP inspection and static ARP entries.",
+      "example": "An attacker impersonating the network gateway on a local network."
+    },
+    {
+      "term": "IP Spoofing",
+      "definition": "An attack technique in which an attacker forges the source IP address in network packets. It is commonly used in DDoS attacks to hide the attacker's identity and bypass IP-based trust, and ingress and egress filtering helps reduce it.",
+      "example": "Sending packets that appear to originate from a trusted IP address."
+    },
+    {
+      "term": "Session Hijacking",
+      "definition": "An attack in which an attacker steals or takes control of a user's active session. Attackers may obtain session tokens through sniffing or XSS, so using HTTPS, secure cookies and short session timeouts helps protect users.",
+      "example": "Stealing a session cookie to access a victim's logged-in account."
+    },
+    {
+      "term": "Replay Attack",
+      "definition": "An attack in which previously captured communication or authentication data is retransmitted to gain unauthorized access or repeat an action. It works even when the data is encrypted, because the attacker does not need to read it, and defenses include timestamps, nonces and one-time tokens.",
+      "example": "Reusing a captured authentication message to impersonate a legitimate user."
+    },
+    {
+      "term": "Evil Twin Attack",
+      "definition": "A wireless attack in which a fake Wi-Fi access point imitates a legitimate network. Victims who connect to the fake network may have their traffic monitored or be shown fake login pages, so using a VPN and verifying network names is advised.",
+      "example": "A fake airport Wi-Fi hotspot designed to capture users' information."
+    },
+    {
+      "term": "Wi-Fi Deauthentication Attack",
+      "definition": "An attack that sends forged deauthentication frames to disconnect devices from a wireless network. Attackers often use it to force devices to reconnect so they can capture handshakes or push them onto a fake network, and WPA3 and protected management frames help prevent it.",
+      "example": "Forcing users to disconnect repeatedly from a public Wi-Fi network."
+    },
+    {
+      "term": "Zero-Day Exploit",
+      "definition": "An attack that exploits a software vulnerability before a security fix is available or before the vulnerability is publicly known to the affected vendor. Because no patch exists, defenders have zero days to prepare, and such exploits are highly valuable and often used in targeted attacks.",
+      "example": "Attackers exploiting a newly discovered browser vulnerability before a patch is released."
+    },
+    {
+      "term": "Remote Code Execution (RCE)",
+      "definition": "A vulnerability or attack technique that allows an attacker to execute code on a remote system. It is one of the most severe vulnerability types because it can give attackers full control of a system, and regular patching and input validation reduce the risk.",
+      "example": "Exploiting a vulnerable web application to execute unauthorized commands on its server."
+    },
+    {
+      "term": "Directory Traversal",
+      "definition": "An attack that manipulates file paths to access files outside the intended directory. Attackers use sequences such as ../ to climb out of the web folder, and the risk is reduced by validating file paths and restricting file access.",
+      "example": "Exploiting a vulnerable website to access its /etc/passwd file."
+    },
+    {
+      "term": "Server-Side Request Forgery (SSRF)",
+      "definition": "An attack that tricks a server into making unauthorized requests to internal or external resources. Because the request comes from a trusted server, it can reach internal systems that are hidden from the Internet, and allow-lists for destinations help prevent it.",
+      "example": "Abusing a vulnerable website to access an internal cloud metadata service."
+    },
+    {
+      "term": "XML External Entity (XXE)",
+      "definition": "An attack that exploits insecure XML processing to access local files or interact with external systems. It can lead to data disclosure, server-side requests or denial of service, and disabling external entity processing in XML parsers prevents it.",
+      "example": "A vulnerable XML parser being manipulated to expose sensitive server files."
+    },
+    {
+      "term": "Supply Chain Attack",
+      "definition": "An attack that compromises software, hardware or services through a trusted supplier or third-party component. Since customers trust the supplier, malicious code can reach many organizations at once, and verifying software integrity and vetting vendors help reduce the risk.",
+      "example": "An attacker compromising a software update to distribute malware to customers."
+    },
+    {
+      "term": "Insider Threat",
+      "definition": "A security threat caused by someone within an organization who misuses authorized access, intentionally or accidentally. Insiders already have legitimate access, so the damage can be large, and least-privilege access, monitoring and clear policies help reduce the risk.",
+      "example": "An employee copying confidential company data without permission."
+    },
+    {
+      "term": "Social Engineering",
+      "definition": "A technique that manipulates people into revealing information or performing actions that compromise security. It exploits human trust, curiosity and fear instead of technical flaws, and awareness training is one of the most effective defenses.",
+      "example": "An attacker pretending to be an IT technician to obtain an employee's password."
+    },
+    {
+      "term": "Data Exfiltration",
+      "definition": "The unauthorized transfer of sensitive information from a system or organization to an external destination. It may happen through malware, email, cloud storage or hidden channels, and data loss prevention tools and network monitoring help detect it.",
+      "example": "An attacker secretly transferring a company's customer database to an external server."
+    },
+    {
+      "term": "Watering Hole Attack",
+      "definition": "An attack in which attackers compromise a website frequently visited by their intended victims. The attackers study which sites their targets use and infect those sites with exploits, so even careful users can be compromised through a trusted website.",
+      "example": "Compromising an industry news website to infect employees who regularly visit it."
+    },
+    {
+      "term": "Malvertising",
+      "definition": "The use of malicious online advertisements to distribute malware or redirect users to harmful websites. Malicious ads can appear on legitimate websites through ad networks and may infect users without any click, so ad blockers and updated software provide protection.",
+      "example": "A fake advertisement redirecting users to a website hosting malicious downloads."
+    },
+    {
+      "term": "DNS Tunneling",
+      "definition": "A technique that hides data transmission inside DNS queries and responses, sometimes used for command-and-control communication or data theft. Because DNS traffic is usually allowed through firewalls, it can bypass security controls, and monitoring for unusually long or frequent DNS queries helps detect it.",
+      "example": "Malware encoding stolen information into DNS requests to communicate with an attacker-controlled server."
+    },
+    {
+      "term": "Business Email Compromise (BEC)",
+      "definition": "A targeted email fraud attack in which criminals impersonate executives, employees or trusted business partners to manipulate financial transactions or steal information. It often involves no malware at all, only convincing messages, and it causes large financial losses, so verifying payment requests through a second channel is important.",
+      "example": "An attacker impersonating a company's CEO and requesting an urgent bank transfer."
+    },
+    {
+      "term": "Malware",
+      "definition": "Short for malicious software, it is any program designed to damage, disrupt or gain unauthorized access to systems or data. Viruses, worms, trojans and ransomware are all types of malware.",
+      "example": "A downloaded program that secretly steals saved passwords."
+    },
+    {
+      "term": "Scareware",
+      "definition": "Malware that frightens users with fake warnings about viruses or problems to trick them into buying useless or harmful software.",
+      "example": "A pop-up claiming \"Your PC is infected!\" and urging a paid cleanup."
+    },
+    {
+      "term": "Ransomware-as-a-Service (RaaS)",
+      "definition": "A criminal business model where ransomware developers rent their malware to affiliates who carry out attacks and share the profits. It lets people with little skill launch ransomware campaigns.",
+      "example": "An affiliate using a rented ransomware kit to attack a hospital."
+    },
+    {
+      "term": "Wiper Malware",
+      "definition": "Malware designed to permanently destroy data or make systems unusable instead of seeking payment. It is often used in sabotage and cyber warfare.",
+      "example": "Malware erasing the hard drives of a company's computers."
+    },
+    {
+      "term": "Bootkit",
+      "definition": "A type of rootkit that infects the boot process, such as the master boot record, so it loads before the operating system. This makes it very hard to detect and remove.",
+      "example": "Malware modifying the boot sector to run before Windows starts."
+    },
+    {
+      "term": "Polymorphic Malware",
+      "definition": "Malware that changes its code or appearance each time it spreads to avoid signature-based antivirus detection, while keeping the same function.",
+      "example": "A virus encrypting itself with a new key for every infection."
+    },
+    {
+      "term": "Metamorphic Malware",
+      "definition": "Malware that rewrites its own code completely with each new copy, rather than only changing the encryption. This makes detection even harder.",
+      "example": "A virus that rearranges its instructions every time it replicates."
+    },
+    {
+      "term": "Macro Virus",
+      "definition": "A virus written in the macro language of applications like word processors and spreadsheets. It runs when a user opens an infected document and enables macros.",
+      "example": "A Word file that asks you to \"Enable Content\" and then downloads malware."
+    },
+    {
+      "term": "Boot Sector Virus",
+      "definition": "A virus that infects the boot sector of a drive and runs when the computer starts. It was common in the era of floppy disks and still shows up in modern bootkits.",
+      "example": "An infected USB drive spreading a virus when the PC boots from it."
+    },
+    {
+      "term": "Remote Access Trojan (RAT)",
+      "definition": "A trojan that gives an attacker remote control over an infected computer, including access to files, the webcam and the keyboard.",
+      "example": "A fake game installer secretly letting an attacker view the victim's screen."
+    },
+    {
+      "term": "Banking Trojan",
+      "definition": "Malware designed to steal online banking credentials and financial information, often by showing fake login forms or capturing keystrokes.",
+      "example": "A trojan overlaying a fake form on a bank's login page."
+    },
+    {
+      "term": "Dropper",
+      "definition": "A malicious program whose job is to install or \"drop\" other malware onto a system. The dropper itself may look harmless to avoid detection.",
+      "example": "A small file that installs a keylogger after running."
+    },
+    {
+      "term": "Loader",
+      "definition": "A small piece of malware that downloads and runs additional malicious components from the Internet. It helps attackers deliver a larger payload in stages.",
+      "example": "Malware that contacts a server and downloads ransomware."
+    },
+    {
+      "term": "Payload",
+      "definition": "The part of malware or an exploit that performs the harmful action, such as deleting files, encrypting data or opening a backdoor.",
+      "example": "The code that encrypts files after a ransomware infection."
+    },
+    {
+      "term": "Exploit Kit",
+      "definition": "A toolkit that automatically scans a victim's browser or software for vulnerabilities and uses them to install malware. It is often delivered through compromised websites or ads.",
+      "example": "A malicious ad redirecting a visitor to a page that tests for browser flaws."
+    },
+    {
+      "term": "Infostealer",
+      "definition": "Malware that collects sensitive data such as saved passwords, cookies, cryptocurrency wallets and system details, and sends it to attackers.",
+      "example": "A program stealing browser-saved passwords and sending them to a server."
+    },
+    {
+      "term": "Mobile Malware",
+      "definition": "Malicious software targeting smartphones and tablets, often spread through fake apps, malicious links or text messages.",
+      "example": "A fake flashlight app that reads text messages."
+    },
+    {
+      "term": "Stalkerware",
+      "definition": "Software secretly installed on a device to monitor someone's location, messages and activity without their knowledge. It is a serious privacy and safety threat.",
+      "example": "An app hidden on a phone that tracks the owner's location."
+    },
+    {
+      "term": "Browser Hijacker",
+      "definition": "Malware or an unwanted extension that changes browser settings such as the homepage or search engine to redirect users to certain sites.",
+      "example": "A browser suddenly using a strange search engine after installing free software."
+    },
+    {
+      "term": "Potentially Unwanted Program (PUP)",
+      "definition": "Software that may not be strictly malicious but is unwanted, such as bundled toolbars or system optimizers. It often installs with free programs and can reduce security.",
+      "example": "A free PDF tool installing extra toolbars without clear consent."
+    },
+    {
+      "term": "Command and Control (C2)",
+      "definition": "The infrastructure attackers use to communicate with and give instructions to compromised systems. Infected devices connect to it to receive commands and send stolen data.",
+      "example": "Malware checking a server every minute for new instructions."
+    },
+    {
+      "term": "Zombie Computer",
+      "definition": "A compromised computer that is controlled remotely by an attacker, often as part of a botnet, without the owner's knowledge.",
+      "example": "A home PC secretly sending spam as part of a botnet."
+    },
+    {
+      "term": "Spam",
+      "definition": "Unsolicited bulk messages, usually email, sent in large numbers for advertising, scams or to spread malware.",
+      "example": "Thousands of emails offering a fake prize with a malicious link."
+    },
+    {
+      "term": "Drive-by Download",
+      "definition": "The automatic download and installation of malware when a user simply visits a compromised website, often by exploiting browser vulnerabilities, with no clicking needed.",
+      "example": "Visiting a hacked blog that silently installs a trojan."
+    },
+    {
+      "term": "Advanced Persistent Threat (APT)",
+      "definition": "A prolonged, targeted cyberattack in which a skilled group gains access to a network and stays hidden for a long time to steal data or spy. APTs are often linked to nation-states.",
+      "example": "A group spending months inside a government network to steal documents."
+    },
+    {
+      "term": "Living off the Land (LotL)",
+      "definition": "A technique in which attackers use legitimate tools already present in the system, such as PowerShell or WMI, instead of bringing their own malware, which makes detection difficult.",
+      "example": "An attacker using built-in Windows tools to run commands and move around."
+    },
+    {
+      "term": "Process Injection",
+      "definition": "A technique where malicious code is inserted into the memory of a legitimate running process so it runs under that process's identity and avoids detection.",
+      "example": "Malware injecting code into explorer.exe to hide."
+    },
+    {
+      "term": "DLL Hijacking",
+      "definition": "An attack that tricks a program into loading a malicious dynamic link library instead of the legitimate one by placing it where the program looks first.",
+      "example": "A malicious DLL placed in an application's folder gets loaded instead of the real one."
+    },
+    {
+      "term": "Lateral Movement",
+      "definition": "The techniques attackers use to move from one compromised system to others inside a network while searching for valuable data and higher privileges.",
+      "example": "An attacker using stolen credentials to log in to other servers on the network."
+    },
+    {
+      "term": "Code Injection",
+      "definition": "An attack in which an attacker inserts malicious code into a program or process, which the application then executes as if it were legitimate.",
+      "example": "Injecting script code into an application that evaluates user input."
+    },
+    {
+      "term": "Zero-Click Exploit",
+      "definition": "An attack that compromises a device without any interaction from the victim, such as opening a message or clicking a link. It is especially dangerous and difficult to detect.",
+      "example": "A malicious message that compromises a phone as soon as it is received."
+    },
+    {
+      "term": "Persistence Mechanism",
+      "definition": "A method malware or attackers use to stay on a system after a reboot or logout, such as startup entries, scheduled tasks or services.",
+      "example": "Malware adding itself to the Windows Run registry key."
+    },
+    {
+      "term": "Buffer Overflow",
+      "definition": "A vulnerability in which a program writes more data to a memory buffer than it can hold, overwriting adjacent memory. Attackers can use it to crash programs or run their own code.",
+      "example": "Sending a very long input to a C program that uses gets()."
+    },
+    {
+      "term": "Heap Overflow",
+      "definition": "A buffer overflow that happens in the heap, the memory area used for dynamic allocation. It can corrupt data structures and may lead to code execution.",
+      "example": "Writing beyond the end of a block allocated with malloc()."
+    },
+    {
+      "term": "Format String Attack",
+      "definition": "An attack that exploits functions like printf when user input is used directly as the format string, allowing attackers to read memory or write to it.",
+      "example": "Entering %x%x%x into a vulnerable program to leak memory values."
+    },
+    {
+      "term": "Integer Overflow",
+      "definition": "A flaw where an arithmetic operation produces a value too large for the data type, wrapping around and causing unexpected behavior such as incorrect memory allocation.",
+      "example": "An unsigned 8-bit value of 255 becoming 0 after adding 1."
+    },
+    {
+      "term": "Race Condition",
+      "definition": "A flaw that occurs when the outcome of a program depends on the timing of events, which an attacker can manipulate to gain unintended access.",
+      "example": "Changing a file between a program's permission check and its use."
+    },
+    {
+      "term": "Use-After-Free",
+      "definition": "A memory corruption bug where a program continues to use memory after it has been freed, which attackers can exploit to run malicious code.",
+      "example": "A browser bug where a freed object is accessed again."
+    },
+    {
+      "term": "Return-Oriented Programming (ROP)",
+      "definition": "An exploitation technique that chains small pieces of existing code, called gadgets, to perform malicious actions and bypass protections that block injected code.",
+      "example": "An attacker chaining existing instructions to bypass non-executable memory."
+    },
+    {
+      "term": "Shellcode",
+      "definition": "A small piece of machine code used as the payload in an exploit, traditionally to start a command shell on the target.",
+      "example": "Code injected through a buffer overflow that spawns a shell."
+    },
+    {
+      "term": "Reverse Shell",
+      "definition": "A shell in which the compromised machine connects back to the attacker, which helps bypass firewalls that block incoming connections.",
+      "example": "A victim's computer connecting out to an attacker's listener."
+    },
+    {
+      "term": "Bind Shell",
+      "definition": "A shell in which the compromised machine opens a port and waits for the attacker to connect to it. It is often blocked by firewalls on inbound traffic.",
+      "example": "A target listening on port 4444 for the attacker's connection."
+    },
+    {
+      "term": "Web Shell",
+      "definition": "A malicious script uploaded to a web server that gives attackers remote control through a web interface. It is a common way to keep access after a breach.",
+      "example": "A hidden PHP file allowing an attacker to run commands on a server."
+    },
+    {
+      "term": "Command Injection",
+      "definition": "An attack where an attacker makes an application run arbitrary operating system commands by inserting them into input that is passed to a system shell.",
+      "example": "Entering ; cat /etc/passwd into a vulnerable ping form."
+    },
+    {
+      "term": "LDAP Injection",
+      "definition": "An attack that manipulates LDAP queries by inserting malicious input, potentially bypassing authentication or exposing directory data.",
+      "example": "Using special characters in a login field to alter an LDAP search filter."
+    },
+    {
+      "term": "NoSQL Injection",
+      "definition": "An attack that manipulates queries to NoSQL databases such as MongoDB by supplying malicious input, which may bypass logins or reveal data.",
+      "example": "Sending a JSON operator in a login request to bypass a password check."
+    },
+    {
+      "term": "XPath Injection",
+      "definition": "An attack that alters XPath queries used to read XML data by inserting malicious input, which can expose or bypass data.",
+      "example": "Entering ' or '1'='1 into a field used in an XPath query."
+    },
+    {
+      "term": "Blind SQL Injection",
+      "definition": "A type of SQL injection where the application does not display database errors or results, so attackers infer information from behavior or timing.",
+      "example": "Asking true or false questions through page responses to extract data."
+    },
+    {
+      "term": "HTML Injection",
+      "definition": "An attack where an attacker inserts HTML code into a web page through input that is not properly handled, which can change how the page looks or trick users.",
+      "example": "A comment containing a fake login form that appears on the page."
+    },
+    {
+      "term": "Host Header Injection",
+      "definition": "An attack that manipulates the HTTP Host header to poison links, caches or password reset emails if the application trusts it blindly.",
+      "example": "Changing the Host header so a reset email contains an attacker's link."
+    },
+    {
+      "term": "Insecure Deserialization",
+      "definition": "A vulnerability where an application accepts untrusted serialized data and rebuilds objects from it, which can lead to code execution or tampering.",
+      "example": "Modifying a serialized object in a cookie to gain admin rights."
+    },
+    {
+      "term": "Broken Authentication",
+      "definition": "Weaknesses in login or session handling that let attackers compromise passwords, session tokens or accounts, such as weak password rules or exposed session IDs.",
+      "example": "A site allowing unlimited login attempts without lockout."
+    },
+    {
+      "term": "Broken Access Control",
+      "definition": "A vulnerability in which users can act outside their intended permissions, such as viewing other people's data or reaching admin functions.",
+      "example": "A normal user opening an admin page by typing its URL."
+    },
+    {
+      "term": "Insecure Direct Object Reference (IDOR)",
+      "definition": "A flaw where an application exposes internal identifiers and lets users access other people's data by changing them.",
+      "example": "Changing /invoice?id=101 to id=102 and seeing another customer's invoice."
+    },
+    {
+      "term": "Security Misconfiguration",
+      "definition": "Insecure settings such as default passwords, open ports, unnecessary services or detailed error messages that make a system easier to attack.",
+      "example": "A database left online with the default administrator password."
+    },
+    {
+      "term": "Sensitive Data Exposure",
+      "definition": "The failure to adequately protect sensitive information like passwords, card numbers or health records, for example by not encrypting it.",
+      "example": "A website storing passwords in plain text."
+    },
+    {
+      "term": "Open Redirect",
+      "definition": "A vulnerability where a website redirects users to a URL supplied by the attacker without validation. It is used to make phishing links look trustworthy.",
+      "example": "A trusted site link that redirects visitors to a fake login page."
+    },
+    {
+      "term": "Local File Inclusion (LFI)",
+      "definition": "A vulnerability that lets an attacker include files from the server's own filesystem through a vulnerable parameter, possibly exposing sensitive data or running code.",
+      "example": "Using ?page=../../etc/passwd to display a system file."
+    },
+    {
+      "term": "Remote File Inclusion (RFI)",
+      "definition": "A vulnerability where an application loads and runs a file from an external server specified by the attacker, which can result in remote code execution.",
+      "example": "Pointing a page parameter to a malicious script on another website."
+    },
+    {
+      "term": "Unrestricted File Upload",
+      "definition": "A flaw where a website allows files of dangerous types to be uploaded without proper checks, letting attackers upload malicious scripts.",
+      "example": "Uploading a PHP web shell disguised as an image."
+    },
+    {
+      "term": "HTTP Request Smuggling",
+      "definition": "An attack that exploits differences in how front-end and back-end servers interpret HTTP requests, letting attackers sneak hidden requests through.",
+      "example": "Sending a request with conflicting length headers to bypass security controls."
+    },
+    {
+      "term": "HTTP Parameter Pollution",
+      "definition": "An attack that supplies multiple parameters with the same name to confuse how a web application or filter processes them.",
+      "example": "Sending ?id=1&id=2 to bypass input validation."
+    },
+    {
+      "term": "Clickjacking",
+      "definition": "An attack that tricks a user into clicking something different from what they see, usually by hiding a page inside a transparent frame.",
+      "example": "A hidden frame making a user click \"Like\" or \"Delete\" unknowingly."
+    },
+    {
+      "term": "CORS Misconfiguration",
+      "definition": "An insecure Cross-Origin Resource Sharing policy that lets untrusted websites read sensitive responses from another site in a user's browser.",
+      "example": "A server allowing any origin to access private account data."
+    },
+    {
+      "term": "Subdomain Takeover",
+      "definition": "An attack where an attacker claims an unused external service that a subdomain still points to, gaining control of that subdomain.",
+      "example": "blog.example.com pointing to a deleted hosting account that an attacker registers."
+    },
+    {
+      "term": "DNS Hijacking",
+      "definition": "An attack that changes DNS settings or responses so users are redirected to malicious servers, for example by altering router DNS settings or compromising a registrar.",
+      "example": "A router's DNS changed so banking sites open a fake page."
+    },
+    {
+      "term": "DNS Cache Poisoning",
+      "definition": "An attack that inserts false data into a DNS resolver's cache so users are directed to malicious sites.",
+      "example": "A resolver storing a wrong IP address for a bank's domain."
+    },
+    {
+      "term": "DNS Amplification Attack",
+      "definition": "A DDoS technique that sends small DNS requests with a spoofed source address so large DNS responses flood the victim.",
+      "example": "Attackers using open resolvers to send huge responses to a target."
+    },
+    {
+      "term": "SYN Flood",
+      "definition": "A DoS attack that sends many TCP SYN requests without completing the handshake, exhausting the server's connection resources.",
+      "example": "Sending thousands of SYN packets from fake addresses to a web server."
+    },
+    {
+      "term": "UDP Flood",
+      "definition": "A DoS attack that sends a large number of UDP packets to random ports, overwhelming the target and its network.",
+      "example": "A target flooded with UDP traffic until it becomes unresponsive."
+    },
+    {
+      "term": "ICMP Flood",
+      "definition": "A DoS attack that overwhelms a target with a flood of ICMP packets such as ping requests.",
+      "example": "Sending continuous large pings to saturate a server's bandwidth."
+    },
+    {
+      "term": "Ping of Death",
+      "definition": "An old attack that sent oversized or malformed ICMP packets that could crash vulnerable systems. Modern systems are generally protected.",
+      "example": "Sending an oversized ping packet to crash an old operating system."
+    },
+    {
+      "term": "Smurf Attack",
+      "definition": "A DDoS attack that sends ICMP echo requests to a broadcast address with the victim's spoofed IP, so many devices reply to the victim.",
+      "example": "A broadcast ping causing hundreds of replies to flood a victim."
+    },
+    {
+      "term": "Slowloris",
+      "definition": "A DoS attack that holds many connections to a web server open by sending partial HTTP requests very slowly, exhausting its connection capacity.",
+      "example": "A web server unable to accept new visitors because slow connections occupy all slots."
+    },
+    {
+      "term": "HTTP Flood",
+      "definition": "A DDoS attack that overwhelms a web server with many seemingly legitimate HTTP requests, which makes it difficult to distinguish from normal traffic.",
+      "example": "A botnet repeatedly requesting a heavy search page."
+    },
+    {
+      "term": "Teardrop Attack",
+      "definition": "An attack that sends fragmented packets with overlapping offsets, causing some older systems to crash when reassembling them.",
+      "example": "Overlapping IP fragments crashing an unpatched system."
+    },
+    {
+      "term": "MAC Flooding",
+      "definition": "An attack that floods a switch with fake MAC addresses until its address table is full, causing it to broadcast traffic so attackers can eavesdrop.",
+      "example": "Sending thousands of fake frames to make a switch behave like a hub."
+    },
+    {
+      "term": "MAC Spoofing",
+      "definition": "Changing a device's MAC address to impersonate another device or bypass MAC-based access controls.",
+      "example": "Cloning an authorized laptop's MAC address to join a restricted network."
+    },
+    {
+      "term": "VLAN Hopping",
+      "definition": "An attack that lets a device send traffic to a VLAN it should not access, for example through switch spoofing or double tagging.",
+      "example": "An attacker on one VLAN reaching devices on another."
+    },
+    {
+      "term": "DHCP Starvation",
+      "definition": "An attack that requests all available IP addresses from a DHCP server using fake MAC addresses, so legitimate clients cannot obtain addresses.",
+      "example": "A flood of DHCP requests leaving no addresses for new devices."
+    },
+    {
+      "term": "Rogue DHCP Server",
+      "definition": "An unauthorized DHCP server on a network that gives clients malicious settings, such as a fake gateway or DNS server, to redirect traffic.",
+      "example": "A malicious device handing out itself as the default gateway."
+    },
+    {
+      "term": "Rogue Access Point",
+      "definition": "An unauthorized wireless access point connected to a network, which can create a hidden entry point for attackers.",
+      "example": "An employee plugging in a cheap router that bypasses security."
+    },
+    {
+      "term": "Bluejacking",
+      "definition": "Sending unsolicited messages to nearby Bluetooth-enabled devices. It is mostly an annoyance but can be used for social engineering.",
+      "example": "An anonymous message appearing on a phone in a crowded place."
+    },
+    {
+      "term": "Bluesnarfing",
+      "definition": "Unauthorized access to information on a Bluetooth device, such as contacts or messages, by exploiting vulnerabilities.",
+      "example": "An attacker nearby copying a phone's contact list over Bluetooth."
+    },
+    {
+      "term": "KRACK Attack",
+      "definition": "The Key Reinstallation Attack exploits a flaw in the WPA2 four-way handshake to decrypt Wi-Fi traffic by forcing key reuse. It was discovered in 2017 and fixed by patches.",
+      "example": "An attacker forcing a device to reinstall an encryption key and read its data."
+    },
+    {
+      "term": "Wardriving",
+      "definition": "The act of searching for Wi-Fi networks while moving, usually with a laptop or phone, to map networks and find insecure ones.",
+      "example": "Driving through a city and logging unprotected Wi-Fi networks."
+    },
+    {
+      "term": "Wireless Jamming",
+      "definition": "The deliberate use of radio interference to disrupt Wi-Fi or other wireless signals and make the service unavailable.",
+      "example": "A device flooding a frequency so nearby Wi-Fi stops working."
+    },
+    {
+      "term": "Port Scanning",
+      "definition": "The process of probing a host to find which ports are open and which services are running. Attackers use it for reconnaissance, and defenders use it for audits.",
+      "example": "Running a scanner to find that ports 22 and 80 are open."
+    },
+    {
+      "term": "Footprinting",
+      "definition": "The reconnaissance phase of gathering information about a target, such as domain names, IP ranges and employee details, before an attack.",
+      "example": "Collecting a company's public DNS records and email formats."
+    },
+    {
+      "term": "OSINT",
+      "definition": "Open Source Intelligence is information collected from publicly available sources such as websites, social media and public records. Attackers and defenders both use it.",
+      "example": "Finding an employee's job title on a professional networking site."
+    },
+    {
+      "term": "Banner Grabbing",
+      "definition": "A technique for collecting information about a service, such as its name and version, from the message it shows when a connection is made.",
+      "example": "Connecting to a mail server and reading its version banner."
+    },
+    {
+      "term": "Vulnerability Scanning",
+      "definition": "The automated process of checking systems and applications for known security weaknesses. It helps prioritize patches.",
+      "example": "Running a scanner that reports outdated software on servers."
+    },
+    {
+      "term": "Enumeration",
+      "definition": "The process of actively extracting details from a target, such as user names, shares and services, after initial reconnaissance.",
+      "example": "Listing user accounts on a server through an exposed service."
+    },
+    {
+      "term": "Pretexting",
+      "definition": "A social engineering technique in which an attacker invents a believable story or identity to obtain information from a victim.",
+      "example": "Someone posing as an auditor to request employee records."
+    },
+    {
+      "term": "Baiting",
+      "definition": "A social engineering attack that lures victims with something attractive, such as a free download or a USB drive left in public, to deliver malware.",
+      "example": "A USB drive labeled \"Salary Details\" left in a parking lot."
+    },
+    {
+      "term": "Tailgating",
+      "definition": "Gaining physical access to a restricted area by closely following an authorized person through a secured door.",
+      "example": "An intruder walking into an office behind an employee who swiped a card."
+    },
+    {
+      "term": "Quid Pro Quo",
+      "definition": "A social engineering attack that offers a service or benefit in exchange for information or access.",
+      "example": "A caller pretending to be technical support offering help in return for login details."
+    },
+    {
+      "term": "Shoulder Surfing",
+      "definition": "Watching someone enter sensitive information, such as a PIN or password, by looking over their shoulder or using a camera.",
+      "example": "A person watching a victim enter a PIN at an ATM."
+    },
+    {
+      "term": "Dumpster Diving",
+      "definition": "Searching through discarded materials to find sensitive information such as documents, notes or old devices.",
+      "example": "Finding printed passwords in an office trash bin."
+    },
+    {
+      "term": "Typosquatting",
+      "definition": "Registering domain names that are slight misspellings of popular websites to catch users who make typing mistakes, often for phishing or malware.",
+      "example": "Registering gogle.com to trick people looking for google.com."
+    },
+    {
+      "term": "Pharming",
+      "definition": "An attack that redirects users from a legitimate website to a fake one, often by corrupting DNS or local host files, even when they type the correct address.",
+      "example": "Typing a real bank URL and landing on a fake copy."
+    },
+    {
+      "term": "Clone Phishing",
+      "definition": "A phishing attack that copies a legitimate, previously delivered email and replaces its link or attachment with a malicious one.",
+      "example": "A resend of a real invoice email with an infected attachment."
+    },
+    {
+      "term": "Credential Harvesting",
+      "definition": "The collection of usernames and passwords, usually through fake login pages or phishing, to be used or sold later.",
+      "example": "A fake cloud storage login page recording submitted passwords."
+    },
+    {
+      "term": "Deepfake",
+      "definition": "AI-generated or AI-altered audio, images or video that realistically imitate real people. It is used for fraud, impersonation and misinformation.",
+      "example": "A fake voice call imitating a company executive to request a payment."
+    },
+    {
+      "term": "Email Spoofing",
+      "definition": "Forging the sender address of an email so it appears to come from a trusted source. SPF, DKIM and DMARC help detect it.",
+      "example": "An email that seems to come from the CEO but was sent by an attacker."
+    },
+    {
+      "term": "Quishing",
+      "definition": "Phishing that uses QR codes to lead victims to malicious websites. Users scan the code without being able to see the full link.",
+      "example": "A fake parking payment QR sticker leading to a scam site."
+    },
+    {
+      "term": "SIM Swapping",
+      "definition": "An attack where criminals persuade a mobile carrier to transfer a victim's phone number to a SIM they control, so they can receive verification codes.",
+      "example": "An attacker taking over a number to intercept a bank's one-time password."
+    },
+    {
+      "term": "Pass-the-Hash",
+      "definition": "An attack in which an attacker uses a stolen password hash to authenticate without knowing the actual password, mainly in Windows environments.",
+      "example": "Using a captured NTLM hash to log in to another server."
+    },
+    {
+      "term": "Pass-the-Ticket",
+      "definition": "An attack that uses stolen Kerberos tickets to impersonate a user and access resources without knowing the password.",
+      "example": "Reusing a stolen Kerberos ticket to access a file server."
+    },
+    {
+      "term": "Kerberoasting",
+      "definition": "An attack in which an attacker requests Kerberos service tickets for service accounts and cracks them offline to recover the account passwords.",
+      "example": "Cracking a service account's ticket to learn its weak password."
+    },
+    {
+      "term": "Golden Ticket Attack",
+      "definition": "An attack in which an attacker forges Kerberos tickets using the krbtgt account's secret, giving long-lasting and wide access to a domain.",
+      "example": "An attacker creating tickets that grant domain administrator access."
+    },
+    {
+      "term": "Rainbow Table Attack",
+      "definition": "An attack that uses precomputed tables of password hashes to quickly reverse hashes into passwords. Salting passwords defeats it.",
+      "example": "Looking up an unsalted hash in a large table to find the password."
+    },
+    {
+      "term": "Hash Collision Attack",
+      "definition": "An attack that exploits two different inputs producing the same hash value, which can undermine integrity checks and digital signatures.",
+      "example": "Creating two different documents with the same MD5 hash."
+    },
+    {
+      "term": "Birthday Attack",
+      "definition": "A cryptographic attack based on the birthday paradox, which finds collisions in hash functions far faster than expected.",
+      "example": "Finding two messages with the same hash after far fewer attempts than brute force."
+    },
+    {
+      "term": "BadUSB Attack",
+      "definition": "An attack that reprograms a USB device to behave as another device, such as a keyboard, and send malicious keystrokes automatically.",
+      "example": "A USB stick that types commands once plugged in."
+    },
+    {
+      "term": "Cold Boot Attack",
+      "definition": "An attack that recovers encryption keys or data from a computer's memory shortly after it is powered off or restarted, since RAM retains data briefly.",
+      "example": "Rebooting a laptop from a USB drive to read its memory contents."
+    },
+    {
+      "term": "Evil Maid Attack",
+      "definition": "An attack that exploits physical access to an unattended device to install malicious software or tamper with its boot process.",
+      "example": "Someone modifying a laptop's bootloader while it is left in a hotel room."
+    },
+    {
+      "term": "Side-Channel Attack",
+      "definition": "An attack that gains information from the physical behavior of a system, such as timing, power use or sound, instead of attacking the algorithm itself.",
+      "example": "Measuring how long a login check takes to guess a secret."
+    },
+    {
+      "term": "Spectre",
+      "definition": "A family of CPU vulnerabilities that exploit speculative execution to leak data between programs. They were disclosed in 2018 and affect many processors.",
+      "example": "A malicious program reading memory belonging to another process through the CPU cache."
+    },
+    {
+      "term": "Meltdown",
+      "definition": "A CPU vulnerability that lets an unprivileged process read kernel memory by abusing out-of-order execution. It was disclosed in 2018 together with Spectre.",
+      "example": "A program reading protected kernel memory on an unpatched processor."
+    },
+    {
+      "term": "Rowhammer",
+      "definition": "A hardware attack that repeatedly accesses rows of memory so electrical interference flips bits in neighboring rows, which can break security.",
+      "example": "Repeated memory access causing a bit to flip and change permissions."
+    },
+    {
+      "term": "Downgrade Attack",
+      "definition": "An attack that forces a system to use an older, weaker protocol or encryption version that is easier to break.",
+      "example": "Forcing a connection to fall back from TLS 1.3 to an insecure version."
+    },
+    {
+      "term": "SSL Stripping",
+      "definition": "An attack that downgrades a victim's HTTPS connection to HTTP by intercepting traffic, so the attacker can read data in plain text.",
+      "example": "A user on public Wi-Fi unknowingly using HTTP for a banking site."
+    },
+    {
+      "term": "Padding Oracle Attack",
+      "definition": "A cryptographic attack that uses error messages about padding to decrypt data without knowing the key.",
+      "example": "A server's different errors for bad padding being used to decrypt a cookie."
+    },
+    {
+      "term": "Heartbleed",
+      "definition": "A serious 2014 vulnerability in the OpenSSL library that let attackers read memory from servers, potentially exposing private keys and passwords.",
+      "example": "Requesting extra data from a vulnerable server and receiving memory contents."
+    },
+    {
+      "term": "Shellshock",
+      "definition": "A 2014 vulnerability in the Bash shell that allowed attackers to run commands through specially crafted environment variables.",
+      "example": "Sending a malicious header to a CGI script to run commands on the server."
+    },
+    {
+      "term": "Log4Shell",
+      "definition": "A critical 2021 vulnerability in the Apache Log4j library that allowed remote code execution through crafted log messages.",
+      "example": "Sending a special string to a server that logged it using Log4j."
+    },
+    {
+      "term": "EternalBlue",
+      "definition": "An exploit for a vulnerability in Microsoft's SMBv1 protocol that allowed remote code execution. It was used by the WannaCry ransomware.",
+      "example": "WannaCry spreading to unpatched Windows computers through SMB."
+    },
+    {
+      "term": "Mirai Botnet",
+      "definition": "A botnet that infected Internet of Things devices using default passwords and launched massive DDoS attacks, notably in 2016.",
+      "example": "Infected cameras and routers flooding a DNS provider with traffic."
+    },
+    {
+      "term": "Stuxnet",
+      "definition": "A sophisticated worm discovered in 2010 that targeted industrial control systems and was used to damage uranium enrichment centrifuges.",
+      "example": "A worm that altered the behavior of specific industrial controllers."
+    },
+    {
+      "term": "Data Breach",
+      "definition": "An incident in which sensitive, protected or confidential data is accessed or disclosed without authorization.",
+      "example": "Attackers stealing customer records from an online store."
+    },
+    {
+      "term": "Data Leak",
+      "definition": "The accidental exposure of sensitive data caused by error or poor security rather than a deliberate attack.",
+      "example": "A database exposed online because it had no password."
+    },
+    {
+      "term": "Identity Theft",
+      "definition": "The use of someone else's personal information, such as a national ID or bank details, to commit fraud or other crimes.",
+      "example": "Opening a loan using a victim's stolen personal details."
+    },
+    {
+      "term": "Account Takeover",
+      "definition": "A situation in which an attacker gains control of a legitimate user's account, often using stolen or guessed credentials.",
+      "example": "An attacker logging in to a victim's email using a leaked password."
+    },
+    {
+      "term": "Doxing",
+      "definition": "Publishing someone's private or identifying information online without permission, often to harass or intimidate them.",
+      "example": "Posting a person's home address on social media to harass them."
+    },
+    {
+      "term": "Cyberstalking",
+      "definition": "Using the Internet or electronic means to repeatedly harass, monitor or threaten an individual.",
+      "example": "Sending constant threatening messages and tracking someone's accounts."
+    },
+    {
+      "term": "Click Fraud",
+      "definition": "Generating fake clicks on online advertisements to drain advertising budgets or earn fraudulent revenue.",
+      "example": "A bot repeatedly clicking an ad to waste a competitor's budget."
+    },
+    {
+      "term": "Card Skimming",
+      "definition": "Stealing payment card details using a hidden device placed on a card reader, such as an ATM or fuel pump.",
+      "example": "A tiny device attached to an ATM that copies card data."
+    },
+    {
+      "term": "Formjacking",
+      "definition": "Injecting malicious code into online payment forms to steal card details as customers enter them.",
+      "example": "Malicious script on a checkout page sending card numbers to an attacker."
+    },
+    {
+      "term": "Carding",
+      "definition": "The use of stolen credit card details to buy goods or test cards, often in large automated amounts.",
+      "example": "Testing thousands of stolen card numbers with small purchases."
+    },
+    {
+      "term": "Misconfigured Cloud Storage",
+      "definition": "Cloud storage set with overly permissive access so that private data can be viewed or downloaded by anyone.",
+      "example": "A publicly accessible storage bucket containing customer files."
+    },
+    {
+      "term": "Cloud Account Hijacking",
+      "definition": "An attacker taking control of a cloud service account, which can give access to data, resources and the ability to run malicious workloads.",
+      "example": "Stolen cloud credentials used to launch costly mining servers."
+    },
+    {
+      "term": "API Abuse",
+      "definition": "Misuse of an application programming interface, such as exploiting weak authentication, missing limits or logic flaws to access data or disrupt service.",
+      "example": "Scraping private user data from an API that has no rate limiting."
+    },
+    {
+      "term": "Container Escape",
+      "definition": "An attack in which code running inside a container breaks out to access the host system or other containers.",
+      "example": "Exploiting a vulnerability to gain control of the host from within a container."
+    },
+    {
+      "term": "Prompt Injection",
+      "definition": "An attack on AI language model applications in which malicious instructions in input or documents cause the model to ignore its intended rules or reveal data.",
+      "example": "A web page containing hidden instructions that manipulate an AI assistant."
+    },
+    {
+      "term": "Data Poisoning",
+      "definition": "An attack that corrupts the data used to train a machine learning model so the model learns incorrect or malicious behavior.",
+      "example": "Adding mislabeled examples to a dataset to make a spam filter fail."
+    },
+    {
+      "term": "Adversarial Attack",
+      "definition": "An attack that uses carefully crafted inputs to make a machine learning model give wrong results, often with changes humans cannot notice.",
+      "example": "A slightly altered image causing a model to misidentify a stop sign."
+    },
+    {
+      "term": "Dependency Confusion",
+      "definition": "A supply chain attack in which an attacker publishes a malicious public package with the same name as a company's private package so build tools install it instead.",
+      "example": "A build system downloading a public package that has the same name as an internal one."
+    },
+    {
+      "term": "Malicious Browser Extension",
+      "definition": "A browser add-on that appears useful but secretly steals data, injects ads or tracks activity.",
+      "example": "A free coupon extension recording the sites a user visits."
+    },
+    {
+      "term": "Hacktivism",
+      "definition": "The use of hacking to promote a political or social cause, often through website defacement, data leaks or DDoS attacks.",
+      "example": "A group defacing a government website to protest a policy."
+    }
+  ]
+}
