@@ -10,7 +10,7 @@ An intelligent, modular cybersecurity assistant featuring a high-performance **C
 - **In-Memory cJSON Search Engine:** Parses `data.json` once into RAM upon greeting for instant queries.
 - **Multi-Term Comparison Engine:** Automatically detects and contrasts concepts (e.g., `compare TCP and UDP` or `difference between hub and switch`).
 - **Dark-Green Hacker Web Interface:** Responsive terminal UI with a revolving 3D wireframe cyber-globe and animated blinking hacker avatar.
-- **150+ Built-In Cybersecurity Topics:** Across three core domains:
+- **600+ Built-In Cybersecurity Topics:** Across three core domains:
   1. **Networking:** DNS, IPv4/IPv6, Subnetting, TCP, UDP, Routers, Switches, Firewalls, etc.
   2. **Linux Commands:** pwd, ls, cd, grep, chmod, chown, systemctl, etc.
   3. **Cyber Threats:** Phishing, Ransomware, DDoS, SQL Injection, Zero-Day Exploits, etc.
