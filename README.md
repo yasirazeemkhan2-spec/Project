@@ -46,7 +46,7 @@ CyberNexus is an intelligent, offline cybersecurity assistance and search engine
 
 Provide exact terminal/command line instructions inside your README.md so anyone can clone and run your code.
 
-### Step 1: Clone the Repository
+### Step 1: Clone the Repository:
 Open your terminal and execute:
 ```bash
 git clone https://github.com/yasirazeemkhan2-spec/Project.git
