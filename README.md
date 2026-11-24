@@ -1,57 +1,69 @@
 # CyberNexus - Cybersecurity AI Assistant
 
-An intelligent, modular cybersecurity assistant featuring a high-performance **C backend** and a modern **Dark-Green Hacker Web GUI**.
+---
+
+## Section A: Project Introduction
+
+CyberNexus is an intelligent, offline cybersecurity assistance and search engine developed in C to help students and security enthusiasts explore core security concepts across Networking, Linux Commands, and Cyber Threats. The core objective of the system is to parse natural language queries, extract domain-specific terminology, and perform high-speed in-memory data retrieval from a structured JSON database using the cJSON library without recurring disk I/O. Implemented entirely in modular C with a pointer-based data pipeline, the program features dynamic in-memory dataset loading upon user greeting, case-insensitive keyword extraction, dual-term comparative analysis, structured response formatting, and memory leak prevention with comprehensive cleanup upon session termination.
 
 ---
 
-## 🚀 Features
+## Section B: Features & Test Cases (Execution Scenarios)
 
-- **Modular Pointer-Based C Backend:** Clean separation of concerns across `main.c`, `reader.c`, `intent.c`, `searching.c`, and `response.c`.
-- **In-Memory cJSON Search Engine:** Parses `data.json` once into RAM upon greeting for instant queries.
-- **Multi-Term Comparison Engine:** Automatically detects and contrasts concepts (e.g., `compare TCP and UDP` or `difference between hub and switch`).
-- **Dark-Green Hacker Web Interface:** Responsive terminal UI with a revolving 3D wireframe cyber-globe and animated blinking hacker avatar.
-- **600+ Built-In Cybersecurity Topics:** Across three core domains:
-  1. **Networking:** DNS, IPv4/IPv6, Subnetting, TCP, UDP, Routers, Switches, Firewalls, etc.
-  2. **Linux Commands:** pwd, ls, cd, grep, chmod, chown, systemctl, etc.
-  3. **Cyber Threats:** Phishing, Ransomware, DDoS, SQL Injection, Zero-Day Exploits, etc.
+* **Case 1: Session Greeting & In-Memory Dataset Loading**
+  * **Description:** Tests the initial interactive handshake where the user enters a greeting, prompting the data reader to open `data/data.json`, parse its contents into memory via `cJSON_Parse()`, and display the ASCII welcome banner.
+  * **Inputs:** `hi` (or `hello`, `hey`)
+  * **Expected Output:** Confirmation of dataset loading into memory, ASCII banner display from `greetings.txt`, and readiness message prompting for user queries.
+  * **Screenshot:** `![Case 1](screenshots/case1_execution.png)`
+
+* **Case 2: Single-Term Query & Structured Retrieval**
+  * **Description:** Tests intent detection and keyword extraction for a single concept query, case-insensitive lookup across all dataset categories in memory, and structured terminal output formatting.
+  * **Inputs:** `what is DNS` (or `explain ping`, `ls`, `what is phishing`)
+  * **Expected Output:** Formatted record block presenting the matching Term name, its formal Definition, and a practical technical Example.
+  * **Screenshot:** `![Case 2](screenshots/case2_execution.png)`
+
+* **Case 3: Multi-Term Comparative Search (Dual Entity Analysis)**
+  * **Description:** Tests the system's ability to identify comparative syntax with two distinct entities, dispatching dual pointer-based queries through the search engine and rendering a side-by-side technical contrast.
+  * **Inputs:** `compare TCP and UDP` (or `difference between hub and switch`, `ipv4 vs ipv6`)
+  * **Expected Output:** Structured comparative response displaying `[01] TCP` and `[02] UDP` with their respective definitions and examples.
+  * **Screenshot:** `![Case 3](screenshots/case3_execution.png)`
+
+* **Case 4: Invalid Input & Error Handling**
+  * **Description:** Tests defensive error handling when a user submits queries containing unsupported terms, out-of-domain keywords, or unrecognized inputs, ensuring system stability without crashing.
+  * **Inputs:** `what is quantum physics` (or random unsupported terms)
+  * **Expected Output:** User-friendly notification stating the term was not found in the database, with guidance to re-enter a valid topic.
+  * **Screenshot:** `![Case 4](screenshots/case4_execution.png)`
+
+* **Case 5: Session Termination & Memory Deallocation**
+  * **Description:** Tests graceful session termination upon receiving exit commands, validating that all allocated memory in the cJSON hierarchy is completely freed using `cJSON_Delete()` to prevent memory leaks.
+  * **Inputs:** `exit` (or `quit`, `bye`)
+  * **Expected Output:** Polite termination message (`[CyberNexus]: Goodbye! Exiting session...`) followed by clean program termination.
+  * **Screenshot:** `![Case 5](screenshots/case5_execution.png)`
 
 ---
 
-## 📁 Project Structure
+## 4. Instructions to Clone and Execute
 
-```text
-Project/
-├── backend/
-│   ├── cJSON/           # cJSON library (cJSON.c, cJSON.h)
-│   ├── cybernexus.exe   # Compiled standalone executable
-│   ├── intent.c         # Keyword extraction & intent classification
-│   ├── main.c           # Main controller loop
-│   ├── reader.c         # In-memory dataset loader
-│   ├── response.c       # Output formatting (comparisons & single terms)
-│   └── searching.c      # Case-insensitive in-memory search engine
-├── data/
-│   ├── data.json        # 150+ cybersecurity definitions & examples
-│   └── greetings.txt    # ASCII banner
-├── frontend/
-│   ├── app.js           # Client-side chat logic & 3D canvas animation
-│   ├── data.js          # Standalone client data fallback
-│   ├── index.html       # Cyberpunk terminal interface
-│   ├── server.js        # Lightweight Node.js bridge to C backend
-│   └── style.css        # Hacker dark-green neon styling
-├── Run_GUI.bat          # 1-click launcher for the Web GUI
-└── Run_Console.bat      # 1-click launcher for the C Console
+Provide exact terminal/command line instructions inside your README.md so anyone can clone and run your code.
+
+### Step 1: Clone the Repository
+Open your terminal and execute:
+```bash
+git clone https://github.com/yasirazeemkhan2-spec/Project.git
+cd Project
 ```
 
----
+### Step 2: Compile the Code
+Compile your C code:
+```bash
+cd backend
+gcc main.c cJSON/cJSON.c -o cybernexus.exe
+```
 
-## 💻 How to Run (Zero Setup Required)
+### Step 3: Run the Program
+Windows (Command Prompt):
+```cmd
+cybernexus.exe
+```
 
-### Option 1: Interactive Web GUI (Recommended)
-Double-click **`Run_GUI.bat`**.
-- If Node.js is installed on your PC, it starts the local server and connects directly to the C backend.
-- If Node.js is **not** installed, it automatically launches the Cyber Bot GUI directly in your default browser in offline mode.
-
-### Option 2: Pure C Terminal Console
-Double-click **`Run_Console.bat`** (or run `backend/cybernexus.exe`).
-- Requires zero dependencies—runs natively on any Windows computer.
-- Type `hi` or `hello` to begin the session, then ask queries or comparisons.
+*(Optional Web GUI: To launch the Dark-Green Hacker Web GUI, return to the project root directory and double-click `Run_GUI.bat` or open `frontend/index.html` in your browser).*
