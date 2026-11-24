@@ -14,31 +14,41 @@ CyberNexus is an intelligent, offline cybersecurity assistance and search engine
   * **Description:** Tests the initial interactive handshake where the user enters a greeting, prompting the data reader to open `data/data.json`, parse its contents into memory via `cJSON_Parse()`, and display the ASCII welcome banner.
   * **Inputs:** `hi` (or `hello`, `hey`)
   * **Expected Output:** Confirmation of dataset loading into memory, ASCII banner display from `greetings.txt`, and readiness message prompting for user queries.
-  * **Screenshot:** `![Case 1](screenshots/case1_execution.png)`
+  * **Screenshot:**
+
+  ![Case 1](screenshots/case1_execution.png)
 
 * **Case 2: Single-Term Query & Structured Retrieval**
   * **Description:** Tests intent detection and keyword extraction for a single concept query, case-insensitive lookup across all dataset categories in memory, and structured terminal output formatting.
   * **Inputs:** `what is DNS` (or `explain ping`, `ls`, `what is phishing`)
   * **Expected Output:** Formatted record block presenting the matching Term name, its formal Definition, and a practical technical Example.
-  * **Screenshot:** `![Case 2](screenshots/case2_execution.png)`
+  * **Screenshot:**
+
+  ![Case 2](screenshots/case2_execution.png)
 
 * **Case 3: Multi-Term Comparative Search (Dual Entity Analysis)**
   * **Description:** Tests the system's ability to identify comparative syntax with two distinct entities, dispatching dual pointer-based queries through the search engine and rendering a side-by-side technical contrast.
   * **Inputs:** `compare TCP and UDP` (or `difference between hub and switch`, `ipv4 vs ipv6`)
   * **Expected Output:** Structured comparative response displaying `[01] TCP` and `[02] UDP` with their respective definitions and examples.
-  * **Screenshot:** `![Case 3](screenshots/case3_execution.png)`
+  * **Screenshot:**
+
+  ![Case 3](screenshots/case3_execution.png)
 
 * **Case 4: Invalid Input & Error Handling**
   * **Description:** Tests defensive error handling when a user submits queries containing unsupported terms, out-of-domain keywords, or unrecognized inputs, ensuring system stability without crashing.
   * **Inputs:** `what is quantum physics` (or random unsupported terms)
   * **Expected Output:** User-friendly notification stating the term was not found in the database, with guidance to re-enter a valid topic.
-  * **Screenshot:** `![Case 4](screenshots/case4_execution.png)`
+  * **Screenshot:**
+
+  ![Case 4](screenshots/case4_execution.png)
 
 * **Case 5: Session Termination & Memory Deallocation**
   * **Description:** Tests graceful session termination upon receiving exit commands, validating that all allocated memory in the cJSON hierarchy is completely freed using `cJSON_Delete()` to prevent memory leaks.
   * **Inputs:** `exit` (or `quit`, `bye`)
   * **Expected Output:** Polite termination message (`[CyberNexus]: Goodbye! Exiting session...`) followed by clean program termination.
-  * **Screenshot:** `![Case 5](screenshots/case5_execution.png)`
+  * **Screenshot:**
+
+  ![Case 5](screenshots/case5_execution.png)
 
 ---
 
@@ -46,10 +56,10 @@ CyberNexus is an intelligent, offline cybersecurity assistance and search engine
 
 Provide exact terminal/command line instructions inside your README.md so anyone can clone and run your code.
 
-### Step 1: Clone the Repository:
+### Step 1: Clone the Repository
 Open your terminal and execute:
 ```bash
-git clone https://github.com/yasirazeemkhan2-spec/Project.git
+git clone https://github.com/yasirazeemkhan2-spec/Project.git 
 cd Project
 ```
 
